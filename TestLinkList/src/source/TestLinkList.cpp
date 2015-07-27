@@ -10,7 +10,7 @@
 #include "../header/LinkedList.h"
 #include "../header/StaticList.h"
 using namespace std;
-
+//........
 int main() {
 	/*cout << "------******----顺序表------*******" << endl;
 	List<int>* list = new List<int>();
