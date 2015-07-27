@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1437886376 source:/home/juanecho/桌面/TestLinearList/main.cpp
+	<iostream>
+	"seqlist.h"
+
+1437827484 source:/home/juanecho/桌面/TestLinearList/src/linearlist.cpp
+	"linearlist.h"
+
+1437829157 /home/juanecho/桌面/TestLinearList/include/linearlist.h
+	<iostream>
+	<stdlib.h>
+
+1437827637 source:/home/juanecho/桌面/TestLinearList/src/seqlist.cpp
+	"seqlist.h"
+
+1437886854 /home/juanecho/桌面/TestLinearList/include/seqlist.h
+	<iostream>
+	<stdlib.h>
+	<linearlist.h>
+
