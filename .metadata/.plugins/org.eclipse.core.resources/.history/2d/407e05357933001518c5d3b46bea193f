@@ -1,0 +1,37 @@
+/*
+ * StaticList.h
+ *
+ *  Created on: 2015年7月26日
+ *      Author: juanecho
+ */
+
+#ifndef HEADER_STATICLIST_H_
+#define HEADER_STATICLIST_H_
+#include <iostream>
+using namespace std;
+
+const int maxSize = 100;
+template<typename T>
+struct SLinkNode{
+	T data;//结点数据
+	int link;//结点链接指针
+};
+
+template <typename T>
+class StaticList{
+	SLinkNode<T> elem[maxSize];
+	int avil; //当前可分配空间的首地址
+public:
+	void InitList();
+	int Length();
+	int Search(T x);
+	int Locate(int i);
+	bool Append(T x);
+	bool Insert(int i, T x);
+	bool Remove(int i);
+	bool IsEmpty();
+};
+
+
+
+#endif /* HEADER_STATICLIST_H_ */

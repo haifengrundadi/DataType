@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : TestLinkList.cpp
+// Author      : juanecho
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "../header/LinkedList.h"
+using namespace std;
+
+int main() {
+	cout << "------******----顺序表------*******" << endl;
+	LinkNode<int>* first = new LinkNode<int>();
+	List<int> *list = new List(first);
+	list->inputFront(-1);
+	return 0;
+}
