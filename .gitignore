@@ -1,3 +1,2 @@
-#ingore dir
-/RemoteSystemsTempFiles
-/Debug
+#don not ingore dir
+!/src
