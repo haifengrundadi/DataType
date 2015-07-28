@@ -1,0 +1,7 @@
+09:48:07 **** Clean-only build of configuration Debug for project TestLinkList ****
+make clean 
+rm -rf  ./src/source/TestLinkList.o  ./src/source/TestLinkList.d  TestLinkList
+ 
+
+09:48:07 Build Finished (took 97ms)
+

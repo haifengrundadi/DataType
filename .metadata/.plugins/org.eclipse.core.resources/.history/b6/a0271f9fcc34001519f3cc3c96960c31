@@ -19,7 +19,6 @@ struct SLinkNode{
 
 template <typename T>
 class StaticList{
-private:
 	SLinkNode<T> elem[maxSize];
 	int avil; //当前可分配空间的首地址
 public:
