@@ -1,0 +1,17 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+    	//通过异或操作
+    	if (nums.size() == 0)
+    		return 0;
+    	int result = nums[0];
+    	vector<int>::iterator it;
+    	for(it=nums.begin()+1;it!=nums.end();it++)
+    		result = *it ^ result;
+    	return result;
+    }
+};

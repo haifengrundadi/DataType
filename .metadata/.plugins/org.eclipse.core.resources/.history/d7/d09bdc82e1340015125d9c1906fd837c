@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+    	//通过异或操作
+    	if(nums == NULL)
+    		return 0;
+    	int result = nums[0];
+    	for(int i = nums.begin()+1; i!= nums.end();i++)
+    	{
+    		result = result ^ nums[i];
+    	}
+    	return result;
+    }
+};
