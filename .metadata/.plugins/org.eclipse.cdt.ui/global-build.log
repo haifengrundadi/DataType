@@ -1,12 +1,4 @@
-17:00:48 **** Build of configuration Debug for project TestLinkList ****
-make all 
-Building file: ../src/source/TestLinkList.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/TestLinkList.d" -MT"src/source/TestLinkList.d" -o "src/source/TestLinkList.o" "../src/source/TestLinkList.cpp"
-Finished building: ../src/source/TestLinkList.cpp
- 
-Building target: TestLinkList
-Invoking: GCC C++ Linker
-g++  -o "TestLinkList"  ./src/source/TestLinkList.o   
-Finished building target: TestLinkList
+20:32:27 **** Clean-only build of configuration Debug for project LeetCode ****
+make clean 
+rm -rf  ./src/source/source/LeetCode021.o ./src/source/source/LeetCode104.o ./src/source/source/LeetCode136.o ./src/source/source/LeetCode237.o ./src/source/source/LeetCode242.o  ./src/source/source/LeetCode021.d ./src/source/source/LeetCode104.d ./src/source/source/LeetCode136.d ./src/source/source/LeetCode237.d ./src/source/source/LeetCode242.d  LeetCode
  

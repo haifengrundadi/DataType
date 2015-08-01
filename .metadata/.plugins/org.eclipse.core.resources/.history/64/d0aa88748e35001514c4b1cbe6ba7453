@@ -1,0 +1,23 @@
+/*
+ * Test.cpp
+ *
+ *  Created on: 2015年7月29日
+ *      Author: juanecho
+ */
+#include  "Test.h"
+using namespace std;
+
+int main()
+{
+	Solution s= new Solution();
+	ListNode* l1 = ListNode(2);
+	ListNode* l2 = ListNode(1);
+	ListNode* result ;
+	result =  s.mergeTwoLists(l1, l2);
+	while(result != NULL)
+	{
+		cout<<result->val<<"\t";
+		result = result->next;
+	}
+	return 0;
+}
