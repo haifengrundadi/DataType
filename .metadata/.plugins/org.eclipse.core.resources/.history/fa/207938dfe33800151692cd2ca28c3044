@@ -1,0 +1,40 @@
+/*
+ * AString.h
+ *
+ *  Created on: 2015年8月2日
+ *      Author: juanecho
+ */
+
+#ifndef HEADER_4_ASTRING_H_
+#define HEADER_4_ASTRING_H_
+#include<iostream>
+#include<string>
+#define defaultSize = 128;
+using namespace std;
+
+class AString
+{
+public:
+	AString(int sz = defaultSize);
+	AString(const char* init);
+	AString(const AString& ob);
+	~AString(){delete []ch;}
+	int Length()const{return curLength;}
+	AString& operator()(int pos,int len);
+	int operator==(AString& ob)const{return strcmp(ch,ob.ch)==0;}
+	int operator != (AString& ob)const{return strcmp(ch, ob.ch) != 0;}
+	int operator!()const{return curLength == 0;}
+	AString& operator=(AString& ob);
+	AString& operator+=(AString& ob);
+	char& operator[](int i);
+	int Find(AString& pat)const;
+private:
+	char* ch;
+	int curLength;
+	int maxSize;
+};
+
+
+
+
+#endif /* HEADER_4_ASTRING_H_ */

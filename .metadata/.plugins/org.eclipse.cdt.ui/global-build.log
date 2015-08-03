@@ -1,4 +1,4 @@
-20:32:27 **** Clean-only build of configuration Debug for project LeetCode ****
+21:59:17 **** Clean-only build of configuration Debug for project TestLinkList ****
 make clean 
-rm -rf  ./src/source/source/LeetCode021.o ./src/source/source/LeetCode104.o ./src/source/source/LeetCode136.o ./src/source/source/LeetCode237.o ./src/source/source/LeetCode242.o  ./src/source/source/LeetCode021.d ./src/source/source/LeetCode104.d ./src/source/source/LeetCode136.d ./src/source/source/LeetCode237.d ./src/source/source/LeetCode242.d  LeetCode
+rm -rf  ./src/source/TestLinkList.o  ./src/source/TestLinkList.d  TestLinkList
  

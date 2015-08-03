@@ -35,27 +35,6 @@ bool LinkedQueue<T>::EnQueue(const T&  x)
 		return true;
 	}
 }
-	template <typename T>
-	bool DeQueue(T& x);
-	template <typename T>
-	bool getFront(T& x)const;
-template <typename T>
-void makeEmpty()
-{
-	LinkNode<T>*p;
-	while(front != NULL)
-	{
-		p = front;
-		front = front->link;
-		delete p;
-	}
-}
-template <typename T>
-	bool IsEmpty()const{return (front == NULL)?true:false;}
-	template <typename T>
-	int getSize()const;
-	template <typename T>
-	friend ostream& operator<<(ostream& os,LinkedQueue<T>& Q);
 
 
 

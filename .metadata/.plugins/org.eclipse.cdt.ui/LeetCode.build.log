@@ -1,7 +1,7 @@
-20:32:27 **** Clean-only build of configuration Debug for project LeetCode ****
+21:58:02 **** Clean-only build of configuration Debug for project LeetCode ****
 make clean 
 rm -rf  ./src/source/source/LeetCode021.o ./src/source/source/LeetCode104.o ./src/source/source/LeetCode136.o ./src/source/source/LeetCode237.o ./src/source/source/LeetCode242.o  ./src/source/source/LeetCode021.d ./src/source/source/LeetCode104.d ./src/source/source/LeetCode136.d ./src/source/source/LeetCode237.d ./src/source/source/LeetCode242.d  LeetCode
  
 
-20:32:27 Build Finished (took 137ms)
+21:58:02 Build Finished (took 89ms)
 
