@@ -1,7 +1,6 @@
-21:58:02 **** Clean-only build of configuration Debug for project LeetCode ****
-make clean 
-rm -rf  ./src/source/source/LeetCode021.o ./src/source/source/LeetCode104.o ./src/source/source/LeetCode136.o ./src/source/source/LeetCode237.o ./src/source/source/LeetCode242.o  ./src/source/source/LeetCode021.d ./src/source/source/LeetCode104.d ./src/source/source/LeetCode136.d ./src/source/source/LeetCode237.d ./src/source/source/LeetCode242.d  LeetCode
- 
+22:32:06 **** Incremental Build of configuration Debug for project LeetCode ****
+make all 
+make: 没有什么可以做的为 `all'。
 
-21:58:02 Build Finished (took 89ms)
+22:32:06 Build Finished (took 62ms)
 

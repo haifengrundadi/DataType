@@ -1,0 +1,67 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+
+class Solution {
+	/*
+	 * 1 数字前面只能有一个符号，也就是只能有一个‘+’或者‘-’
+	 *2 字符串的开头和结尾可以有空格，但是代表数字的字符串的中间不能有空格。也就是"   1.0  "是有效数字，而"1. 0"是无效的。
+	 *3 中间可以有指数'e'，但是有了'e'以后，后面必须有一个整数
+	 *4 'e'前面可以有一个小数，'e'后面只能是一个整数
+	 */
+public:
+	 bool isNumber(string s) {
+	        bool flag = false;
+	        int len = s.length();
+	        int count  =0;
+	        if(len == 0)
+	        	return flag;
+	        while(s[count] == ' ')
+	        	count++;
+	        if(s[count] == '+' || s[count]=='-')
+	        	count++;
+
+	        while(count < len)
+	        {
+	        	if(isdigit(s[count]))
+	        		count++;
+	        	else if(s[count] == 'e')
+	        	{
+	        		count++;
+	        		if(!isdigit(s[count]))
+	        			return false;
+	        	}
+	        	else if(s[count] == '.')
+	        		count++;
+	        	else if(s[count] == ' ')
+	        	{
+	        		while(count < len && s[count] == ' ' )
+	        		{
+	        			count++;
+	        		}
+	        		if(count != len)
+	        			return false;
+	        	}else{
+	        		return false;
+	        	}
+
+	        }
+	        return true;
+	  }
+};
+
+int main()
+{
+	Solution * s= new Solution();
+	string str = "f.e";
+	cout<<s->isNumber(str)<<endl;
+	return 0;
+}

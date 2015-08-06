@@ -1,0 +1,37 @@
+/*
+ * LeetCode004.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+class Solution {
+public:
+	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+	        double m = 0;
+	        int len_nums1 = nums1.size();
+	        int len_nums2 = nums2.size();
+	        if(len_nums1 == 0 && len_nums2 == 0)
+	        	return m;
+	        if(len_nums1 == 0)
+	        	if(len_nums2 % 2 == 0)
+	        		return ( nums2[len_nums2/2 -1] + nums2[len_nums2/2]) * 1.0/2;
+	        	else
+	        		return  nums2[len_nums2/2];
+	        if(len_nums2 == 0)
+	        	if(len_nums1 % 2 == 0)
+	        	      return ( nums2[len_nums1/2 -1] + nums2[len_nums1/2]) * 1.0/2;
+	        	else
+	        	      return nums2[len_nums1/2];
+	        return m;
+	 }
+};
+
+int main()
+{
+	return 0;
+}

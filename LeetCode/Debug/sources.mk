@@ -23,5 +23,8 @@ C_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+src/source/source/List \
 src/source/source \
+src/source/source/Tree \
+src/source/source/other \
 
