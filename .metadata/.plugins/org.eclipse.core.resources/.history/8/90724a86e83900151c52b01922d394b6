@@ -1,0 +1,88 @@
+/*
+ * LeetCode001.cpp
+ *
+ *  Created on: 2015年8月3日
+ *      Author: juanecho
+ */
+
+
+#include<vector>
+#include<iostream>
+#include <algorithm>
+#include <map>
+using namespace std;
+
+class Solution {
+public:
+   /* vector<int> twoSum(vector<int>& nums, int target)
+	{
+    	vector<int> array(nums);
+    	vector<int> array1;
+    	int len = nums.size();
+    	sort(nums.begin(),nums.end());
+    	int index1 = 0;
+    	int index2 = nums.size() -1;
+    	while(index1 < index2)
+    	{
+    		if(nums[index1] + nums[index2] < target)
+    			index1++;
+    		else if(nums[index1] + nums[index2] > target)
+    			index2--;
+    		else
+    		{
+    			break;
+    		}
+    	}
+    	for(int i = 0,n = 2;i <= len-1;i++)
+    	{
+    		if(array[i] == nums[index1] || array[i] == nums[index2])
+    		{
+    			array1.push_back(i+1);
+    			if(--n == 0)
+    				break;
+    		}
+    	}
+    	return array1;
+    }
+    */
+    vector<int> twoSum(vector<int> &numbers, int target)
+      {
+             vector<int> v;
+              map<int, int> m;
+              for(int i = 0; i < numbers.size(); ++ i)
+             {
+            	  cout<<numbers[i]<<"--" <<m[numbers[i]]<<"***"<<m.find(target - numbers[i]) <<endl;
+                 if(m.find(target - numbers[i]) != m.end())
+                {
+                	cout<<m[target - numbers[i]]<<endl;
+                    v.push_back(m[target - numbers[i]] + 1);
+                    v.push_back(i + 1);
+                    break;
+               }
+                m[numbers[i]] = i;
+            }
+             return v;
+         }
+};
+int main()
+{
+	vector<int> a;
+	vector<int> b;
+	a.push_back(79);
+	a.push_back(150);
+	a.push_back(24);
+
+	a.push_back(50);
+	a.push_back(88);
+	a.push_back(345);
+	a.push_back(3);
+	Solution * s = new Solution();
+	b = s->twoSum(a,200);
+
+	int blen = b.size();
+			for(int i = 0;i <= blen-1;i++)
+	    	{
+	    		cout<<b[i]<<"\t";
+	    	}
+	return 0;
+};

@@ -1,0 +1,86 @@
+/*
+ * LeetCode001.cpp
+ *
+ *  Created on: 2015年8月3日
+ *      Author: juanecho
+ */
+
+
+#include<vector>
+#include<iostream>
+#include <algorithm>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target)
+	{
+    	vector<int> array(nums);
+    	vector<int> array1;
+    	int i=0, j = 0;
+    	int flag = 0;
+    	int len = nums.size();
+    	sort(nums.begin(),nums.end());
+    	int index1 = 0;
+    	int index2 = nums.size() -1;
+    	while(index1 < index2)
+    	{
+    		if(nums[index1] + nums[index2] < target)
+    			index1++;
+    		else if(nums[index1] + nums[index2] > target)
+    			index2--;
+    		else
+    		{
+    			break;
+    		}
+    	}
+    	for(i = 0;i <= len-1;i++)
+    	{
+    		if(array[i] == nums[index1])
+    		{
+    			cout<<i<<"-----"<<endl;
+    			array1.push_back(++i);
+    			if((i-1 ) > len/2)
+    				flag = 1;
+    			break;
+    		}
+    	}
+    	cout<<i<<"\t"<<endl;
+    	j = i % (len-1);
+    	for(;j<= len-1;j++)
+    	 {
+    	    		if(array[j] == nums[index2])
+    	    		{
+    	    			cout<<i<<"--#---"<<endl;
+    	    			if(flag)
+    	    				array1.insert(array1.begin(), ++j);
+    	    			else
+    	    				array1.push_back(++j);
+    	    			break;
+    	    		}
+    	 }
+
+    	return array1;
+    }
+};
+int main()
+{
+	vector<int> a;
+	vector<int> b;
+	a.push_back(150);
+	a.push_back(24);
+	a.push_back(79);
+	a.push_back(50);
+	a.push_back(88);
+	a.push_back(345);
+	a.push_back(3);
+	Solution * s = new Solution();
+	b = s->twoSum(a,200);
+
+	int blen = b.size();
+			for(int i = 0;i <= blen-1;i++)
+	    	{
+	    		cout<<b[i]<<"\t";
+	    	}
+	return 0;
+};

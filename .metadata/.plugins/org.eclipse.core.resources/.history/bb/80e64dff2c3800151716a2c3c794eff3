@@ -1,0 +1,53 @@
+/*
+ * LeetCode243.cpp
+ *
+ *  Created on: 2015年8月1日
+ *      Author: juanecho
+ */
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        if(s.length() != t.length() || s.length() == 0)
+        {
+        	return false;
+        }else{
+        	char c = s[0];
+        	for(int i = 0; i < s.size(); i++)
+        	{
+        		for(int j = i; j <  s.size(); j++)
+        			if(s[i] <= s[j])
+        			{
+        				c = s[i];
+        				s[i] = s[j];
+        				s[j] = c;
+        			}
+        	}
+        	cout<<s<<endl;
+        	for(int i = 0; i <  s.size(); i++)
+        	        {
+        	        		for(int j = i; j < s.size(); j++)
+        	        			if(t[i] <= t[j])
+        	        			{
+        	        				c = t[i];
+        	        				t[i] = t[j];
+        	        				t[j] = c;
+        	        			}
+        	        	}
+        	cout<<t<<endl;
+        	return s.compare(t);
+        }
+
+    }
+};
+
+int main()
+{
+	Solution* s= new Solution();
+	cout<<s.isAnagram("nagaram","anagram")<<endl;
+	return 0;
+}
+

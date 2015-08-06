@@ -1,0 +1,33 @@
+/*
+ * SeqLinkedStack.h
+ *
+ *  Created on: 2015年7月28日
+ *      Author: juanecho
+ */
+
+#ifndef HEADER_SEQLINKEDSTACK_H_
+#define HEADER_SEQLINKEDSTACK_H_
+#include <iostream>
+#include"LinkedList.h"
+#include"Stack.h"
+template<typename T>
+class SeqLinkedStack:public Stack<T>
+{
+public:
+	SeqLinkedStack():top(NULL){};
+	~SeqLinkedStack(){makeEmpty();}
+	void Push(const T& x);
+	bool Pop(T& x);
+	bool getTop(T& x)const;
+	bool IsEmpty()const{return (top==NULL)?true:false;}
+	int getSize()const;
+	void makeEmpty();
+	friend ostream& operator<<(ostream& os,SeqLinkedStack<T> s);
+private:
+	LinkNode<T> * top;
+};
+
+
+
+
+#endif /* HEADER_SEQLINKEDSTACK_H_ */

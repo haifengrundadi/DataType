@@ -1,0 +1,19 @@
+/*
+ * LeetCode002.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Solution {
+public:
+};
+
+int main()
+{
+	return 0;
+}
