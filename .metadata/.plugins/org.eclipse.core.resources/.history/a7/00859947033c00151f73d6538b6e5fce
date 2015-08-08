@@ -1,0 +1,55 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+#include<iostream>
+#include<string>
+#include<cmath>
+#include<fstream>
+#include <stdlib.h>
+using namespace std;
+class Solution {
+public:
+	bool isPalindrome(int x)
+	{
+		int len =int( log10(abs(x))) + 1;
+		int flag= -1;
+		int m = abs(x);
+		while(len > 0)
+		{
+			flag = m%10 == m / int(pow(10,len-1)) ? 1:0;
+			m = m % int(pow(10,len-1)) / 10;
+			if(flag)
+			{
+				len -= 2;
+			}else
+			{
+				return false;
+			}
+		}
+		return flag;
+	}
+};
+
+int main()
+{
+	  Solution * s= new Solution();
+	  cout<<int(log10(2147483648) + 1)<<"---"<<abs(-2147483648)-2147483648<<endl;
+	   char buffer[256];
+	   int num = 0;
+		fstream in;
+		in.open("src/source/source/other/in.txt",ios::in);
+		if(in.is_open())
+		{
+			 while (!in.eof())
+			 {
+				in.getline(buffer,256);
+				num = atoi(buffer);
+				cout<<num<<"--len--"<<ceil(log10(abs(num)))<<"--reverse \t"<<s->isPalindrome(num)<<endl;
+			}
+		}
+	//cout<<s->reverse(11)<<endl;
+	return 0;
+}
