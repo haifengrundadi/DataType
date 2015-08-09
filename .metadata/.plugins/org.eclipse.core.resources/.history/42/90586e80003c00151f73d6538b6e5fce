@@ -1,0 +1,36 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+
+class Solution {
+public:
+	bool isPalindrome(int x) {
+
+	}
+};
+
+/*int main()
+{
+	  Solution * s= new Solution();
+	  cout<<log10(1)<<endl;
+	   char buffer[256];
+	   int num = 0;
+		fstream in;
+		in.open("src/source/source/other/in.txt",ios::in);
+		if(in.is_open())
+		{
+			 while (!in.eof())
+			 {
+				in.getline(buffer,256);
+				num = atoi(buffer);
+				cout<<num<<"--len--"<<ceil(log10(abs(num)))<<"--reverse \t"<<s->reverse(num)<<endl;
+			}
+		}
+	//cout<<s->reverse(11)<<endl;
+	return 0;
+}*/

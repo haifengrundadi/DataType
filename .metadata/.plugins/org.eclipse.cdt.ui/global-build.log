@@ -1,4 +1,4 @@
-22:24:39 **** Build of configuration Debug for project LeetCode ****
+09:55:44 **** Build of configuration Debug for project LeetCode ****
 make all 
 Building file: ../src/source/source/other/LeetCode001.cpp
 Invoking: GCC C++ Compiler
@@ -32,7 +32,26 @@ Finished building: ../src/source/source/other/LeetCode006.cpp
 Building file: ../src/source/source/other/LeetCode007.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
+../src/source/source/other/LeetCode007.cpp: In member function ‘int Solution::reverse(int)’:
+../src/source/source/other/LeetCode007.cpp:19:38: warning: unused variable ‘isBigger’ [-Wunused-variable]
+         int num = 0,flag = 1,len = 0,isBigger=0;
+                                      ^
 Finished building: ../src/source/source/other/LeetCode007.cpp
+ 
+Building file: ../src/source/source/other/LeetCode009.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode009.d" -MT"src/source/source/other/LeetCode009.d" -o "src/source/source/other/LeetCode009.o" "../src/source/source/other/LeetCode009.cpp"
+Finished building: ../src/source/source/other/LeetCode009.cpp
+ 
+Building file: ../src/source/source/other/LeetCode013.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode013.d" -MT"src/source/source/other/LeetCode013.d" -o "src/source/source/other/LeetCode013.o" "../src/source/source/other/LeetCode013.cpp"
+Finished building: ../src/source/source/other/LeetCode013.cpp
+ 
+Building file: ../src/source/source/other/LeetCode038.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode038.d" -MT"src/source/source/other/LeetCode038.d" -o "src/source/source/other/LeetCode038.o" "../src/source/source/other/LeetCode038.cpp"
+Finished building: ../src/source/source/other/LeetCode038.cpp
  
 Building file: ../src/source/source/other/LeetCode065.cpp
 Invoking: GCC C++ Compiler
@@ -43,6 +62,58 @@ Building file: ../src/source/source/other/LeetCode149.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode149.d" -MT"src/source/source/other/LeetCode149.d" -o "src/source/source/other/LeetCode149.o" "../src/source/source/other/LeetCode149.cpp"
 Finished building: ../src/source/source/other/LeetCode149.cpp
+ 
+Building file: ../src/source/source/other/LeetCode191.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode191.d" -MT"src/source/source/other/LeetCode191.d" -o "src/source/source/other/LeetCode191.o" "../src/source/source/other/LeetCode191.cpp"
+Finished building: ../src/source/source/other/LeetCode191.cpp
+ 
+Building file: ../src/source/source/other/LeetCode202.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode202.d" -MT"src/source/source/other/LeetCode202.d" -o "src/source/source/other/LeetCode202.o" "../src/source/source/other/LeetCode202.cpp"
+Finished building: ../src/source/source/other/LeetCode202.cpp
+ 
+Building file: ../src/source/source/other/LeetCode204.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode204.d" -MT"src/source/source/other/LeetCode204.d" -o "src/source/source/other/LeetCode204.o" "../src/source/source/other/LeetCode204.cpp"
+Finished building: ../src/source/source/other/LeetCode204.cpp
+ 
+Building file: ../src/source/source/other/LeetCode205.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode205.d" -MT"src/source/source/other/LeetCode205.d" -o "src/source/source/other/LeetCode205.o" "../src/source/source/other/LeetCode205.cpp"
+Finished building: ../src/source/source/other/LeetCode205.cpp
+ 
+Building file: ../src/source/source/other/LeetCode217.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode217.d" -MT"src/source/source/other/LeetCode217.d" -o "src/source/source/other/LeetCode217.o" "../src/source/source/other/LeetCode217.cpp"
+Finished building: ../src/source/source/other/LeetCode217.cpp
+ 
+Building file: ../src/source/source/other/LeetCode219.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode219.d" -MT"src/source/source/other/LeetCode219.d" -o "src/source/source/other/LeetCode219.o" "../src/source/source/other/LeetCode219.cpp"
+../src/source/source/other/LeetCode219.cpp: In member function ‘bool Solution::containsNearbyDuplicate(std::vector<int>&, int)’:
+../src/source/source/other/LeetCode219.cpp:18:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < nums.size(); i++){
+                                ^
+../src/source/source/other/LeetCode219.cpp:19:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j = i+1; j < nums.size(); j++){
+                                   ^
+Finished building: ../src/source/source/other/LeetCode219.cpp
+ 
+Building file: ../src/source/source/other/LeetCode223.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode223.d" -MT"src/source/source/other/LeetCode223.d" -o "src/source/source/other/LeetCode223.o" "../src/source/source/other/LeetCode223.cpp"
+Finished building: ../src/source/source/other/LeetCode223.cpp
+ 
+Building file: ../src/source/source/other/LeetCode228.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode228.d" -MT"src/source/source/other/LeetCode228.d" -o "src/source/source/other/LeetCode228.o" "../src/source/source/other/LeetCode228.cpp"
+Finished building: ../src/source/source/other/LeetCode228.cpp
+ 
+Building file: ../src/source/source/other/LeetCode231.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode231.d" -MT"src/source/source/other/LeetCode231.d" -o "src/source/source/other/LeetCode231.o" "../src/source/source/other/LeetCode231.cpp"
+Finished building: ../src/source/source/other/LeetCode231.cpp
  
 Building file: ../src/source/source/Tree/LeetCode094.cpp
 Invoking: GCC C++ Compiler
@@ -74,6 +145,11 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode226.d" -MT"src/source/source/Tree/LeetCode226.d" -o "src/source/source/Tree/LeetCode226.o" "../src/source/source/Tree/LeetCode226.cpp"
 Finished building: ../src/source/source/Tree/LeetCode226.cpp
  
+Building file: ../src/source/source/Tree/LeetCode235.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode235.d" -MT"src/source/source/Tree/LeetCode235.d" -o "src/source/source/Tree/LeetCode235.o" "../src/source/source/Tree/LeetCode235.cpp"
+Finished building: ../src/source/source/Tree/LeetCode235.cpp
+ 
 Building file: ../src/source/source/List/LeetCode002.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/List/LeetCode002.d" -MT"src/source/source/List/LeetCode002.d" -o "src/source/source/List/LeetCode002.o" "../src/source/source/List/LeetCode002.cpp"
@@ -94,98 +170,10 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/List/LeetCode142.d" -MT"src/source/source/List/LeetCode142.d" -o "src/source/source/List/LeetCode142.o" "../src/source/source/List/LeetCode142.cpp"
 Finished building: ../src/source/source/List/LeetCode142.cpp
  
-Building file: ../src/source/source/List/LeetCode237.cpp
+Building file: ../src/source/source/List/LeetCode206.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/List/LeetCode237.d" -MT"src/source/source/List/LeetCode237.d" -o "src/source/source/List/LeetCode237.o" "../src/source/source/List/LeetCode237.cpp"
-Finished building: ../src/source/source/List/LeetCode237.cpp
- 
-Building file: ../src/source/source/List/LeetCode242.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/List/LeetCode242.d" -MT"src/source/source/List/LeetCode242.d" -o "src/source/source/List/LeetCode242.o" "../src/source/source/List/LeetCode242.cpp"
-Finished building: ../src/source/source/List/LeetCode242.cpp
- 
-Building file: ../src/source/source/Test.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Test.d" -MT"src/source/source/Test.d" -o "src/source/source/Test.o" "../src/source/source/Test.cpp"
-Finished building: ../src/source/source/Test.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:24:45 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
-22:27:08 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode007.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
-Finished building: ../src/source/source/other/LeetCode007.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:27:27 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode007.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
-Finished building: ../src/source/source/other/LeetCode007.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:27:40 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
-22:29:50 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode007.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
-Finished building: ../src/source/source/other/LeetCode007.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:30:39 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode007.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
-Finished building: ../src/source/source/other/LeetCode007.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:31:03 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
-22:31:19 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
-22:31:53 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode007.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode007.d" -MT"src/source/source/other/LeetCode007.d" -o "src/source/source/other/LeetCode007.o" "../src/source/source/other/LeetCode007.cpp"
-Finished building: ../src/source/source/other/LeetCode007.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode149.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode136.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o   
-Finished building target: LeetCode
- 
-22:32:06 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/List/LeetCode206.d" -MT"src/source/source/List/LeetCode206.d" -o "src/source/source/List/LeetCode206.o" "../src/source/source/List/LeetCode206.cpp"
+/tmp/ccMJOohv.s: Assembler messages:
+/tmp/ccMJOohv.s: Fatal error: can't write src/source/source/List/LeetCode206.o: 设备上没有空间
+/tmp/ccMJOohv.s: Fatal error: can't close src/source/source/List/LeetCode206.o: 设备上没有空间
+make: *** [src/source/source/List/LeetCode206.o] 错误 1

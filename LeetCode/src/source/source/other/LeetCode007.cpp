@@ -16,38 +16,25 @@ class Solution {
 public:
 	int reverse(int x)
 	{
-		int flag = 1,result = 0;
-		if( x == 0) return x;
-		if(x < 0) flag = -1;
-		int len = int(log10(abs(x)))+1;
-		x = abs(x);
-		while(len)
-		{
-			result += (x % 10) * pow(10, len-1);
-			x = x / 10;
-			len--;
-		}
-		return result*flag;
-	}
-};
+        int num = 0,flag = 1,len = 0,isBigger=0;
+        int max = 4294967295,m = 0;
+        if(x == 0) return x;
+        if(x < 0) flag = -1;
+        len = (int)log10(abs(x)) + 1;
+        if(len > 10)return 0;
+        x = abs(x);
 
-int main()
-{
-	  Solution * s= new Solution();
-	  cout<<log10(1)<<endl;
-	   char buffer[256];
-	   int num = 0;
-		fstream in;
-		in.open("src/source/source/other/in.txt",ios::in);
-		if(in.is_open())
-		{
-			 while (!in.eof())
-			 {
-				in.getline(buffer,256);
-				num = atoi(buffer);
-				cout<<num<<"--len--"<<ceil(log10(abs(num)))<<"--reverse \t"<<s->reverse(num)<<endl;
-			}
-		}
-	//cout<<s->reverse(11)<<endl;
-	return 0;
-}
+        while(len)
+        {
+            num += x % 10 * pow(10, len-1);
+            x = x / 10;
+            m = max - num;
+            if(m < 0)
+                return 0;
+            else
+                len--;
+        }
+        //4294967295
+        return num * flag;
+    }
+};

@@ -1,0 +1,57 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+#include<map>
+class Solution {
+	/*
+	Write an algorithm to determine if a number is "happy".
+	A happy number is a number defined by the following process: Starting with any positive integer,
+	replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay),
+ 	 or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
+	Example: 19 is a happy number
+    12 + 92 = 82
+    82 + 22 = 68
+    62 + 82 = 100
+    12 + 02 + 02 = 1
+	 */
+public:
+	bool isHappy(int n) {
+		bool flag = false;
+		map<int, int> m1;
+		int sum = 0;
+		m1.insert(pair<int,int>(n, n));
+		while(1){
+			while(n){
+				sum += pow(n%10,2);
+				cout<<pow(n%10,2)<<"\t";
+				n = n/10;
+			}
+			cout<<"="<<sum<<endl;
+			if(sum == 1)
+				return true;
+			else if( m1.find(sum) != m1.end())
+				return false;
+			else {
+				m1.insert(pair<int,int>(sum, sum));
+				n = sum;
+				sum = 0;
+			}
+			map<int,int>::iterator it;
+			    for(it=m1.begin();it!=m1.end();++it)
+			        cout<<"key: "<<it->first <<" value: "<<it->second<<endl;
+		}
+		return flag;
+	}
+};
+
+int main(){
+	Solution * s= new Solution();
+//for(int i = 1; i < 23; i++)
+		cout<<2<<"---"<<s->isHappy(2)<<endl;
+	return 0;
+}
