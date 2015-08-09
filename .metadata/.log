@@ -993,3 +993,50 @@ java.lang.ArrayIndexOutOfBoundsException: -3
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SESSION 2015-08-08 11:34:18.466 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.filesystem 4 272 2015-08-09 09:47:28.599
+!MESSAGE Could not write file: /home/juanecho/workspace/LeetCode/src/source/source/other/LeetCode205.cpp.
+!STACK 0
+java.io.IOException: 设备上没有空间
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:85)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:223)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:144)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:56)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:95)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1137)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:295)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:331)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:426)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:398)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:327)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.commitFileBuffer(TextFileDocumentProvider.java:871)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.commitWorkingCopy(CDocumentProvider.java:920)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider$2.execute(CDocumentProvider.java:947)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:132)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:70)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:75)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:65)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:456)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:772)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5076)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSave(AbstractTextEditor.java:4866)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.doSave(AbstractTextEditor.java:7209)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:216)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:357)
+	at org.eclipse.ui.internal.SaveablesList$3.run(SaveablesList.java:665)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:285)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:463)
+	a

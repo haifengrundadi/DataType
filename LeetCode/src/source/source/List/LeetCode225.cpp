@@ -6,38 +6,52 @@
  */
 #include "leetcode.h"
 #include <queue>
- class Stack {
+
+class Stack {
 public:
     // Push element x onto stack.
     void push(int x) {
-    	q.push(x);
-    }
-
-    void move(){
-    	if(q.empty()) return;
-    	else{
-    		while(q.size()){
-    			qout.push(q.front());
-    			q.pop();
-    		}
+    	if(qout.empty()){
+    	    qout.push(x);
+    	    return;
+    	}else{
+    		qout.push(x);
     	}
     }
 
     // Removes the element on top of the stack.
     void pop() {
-    	if(qout.empty())
-    		move();
-    	if(!qout.empty())
+    	if(!q.empty()){
+    		while(q.size() - 1){
+    			qout.push(q.front());
+    			q.pop();
+    		}
+    		q.pop();
+    	}else{
+    		while(qout.size() - 1){
+    		    q.push(qout.front());
+    		    qout.pop();
+    		 }
     		qout.pop();
+    		printque(qout);
+    	}
     }
 
+    void printque(queue<int> q){
+    	if(q.size() < 1) return;
+    	while(q.size()){
+    		cout<<q.front()<<"--";
+    		q.pop();
+    	}
+    	cout<<endl;
+    }
     // Get the top element.
     int top() {
     	int x = 0;
-    	if(qout.empty())
-    		move();
 		if(!qout.empty())
 			 x = qout.back();
+		else if(!q.empty())
+			x = q.back();
 		return x;
     }
 
@@ -46,25 +60,26 @@ public:
     	return qout.empty() && q.empty();
     }
 
-private:
     queue<int> q;
     queue<int> qout;
 };
 
 
-int main()
-{
-	Stack* q = new Stack();
-	cout<<q->empty()<<endl;
-	q->push(1);
-	q->push(2);
-	q->push(3);
-	q->push(4);
-	cout<<q->empty()<<endl;
-	cout<<q->top()<<endl;
-	q->pop();
-	cout<<q->top()<<endl;
-	q->push(5);
-	cout<<q->top()<<endl;
-	return 0;
-}
+//int main()
+//{
+//	Stack* q = new Stack();
+//	q->push(1);
+//	q->push(2);
+//	q->push(3);
+//	q->push(4);
+//	cout<<"___"<<endl;
+//	q->printque(q->q);
+//	cout<<"-----"<<endl;
+//	q->printque(q->qout);
+//	cout<<"___"<<endl;
+//	q->pop();
+//	cout<<q->top()<<endl;
+//	q->push(5);
+//	cout<<q->top()<<endl;
+//	return 0;
+//}
