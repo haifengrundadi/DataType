@@ -1,0 +1,33 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+#include<stdint.h>
+
+class Solution {
+public:
+		int trailingZeroes(int n) {
+			int count = 0;
+			if(n == 0) return count;
+			int len = log10(n) + 1;
+			while(--len){
+				cout<<"n = "<<n<<"   len ="<<len;
+				count += (pow(10, len -1) * 2  + (len - 1)) *  (int(n / pow(10, len)));
+				n -= pow(10, len) * (n / pow(10, len));
+			}
+			return count;
+	    }
+};
+
+int main(){
+	Solution * s= new Solution();
+	for(int i = 1; i<= 101; i++){
+		cout<<i<<"---"<<s->trailingZeroes(i)<<endl;
+		cout<<"***************"<<endl;
+	}
+	return 0;
+}
