@@ -1,0 +1,42 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+#include<stdint.h>
+
+class Solution {
+public:
+		long factor(int n){
+			long total = 1;
+			for(int i = 1 ; i <= n; i++){
+				total *= i;
+			}
+			return total;
+		}
+		void trailingZeroes(int n) {
+			int count = 0,j = 0;
+			for(int i = 1; i <= n; i++){
+				if(i % 10 == 0){
+					j = i;
+					while(j % 10 == 0){
+						count = count + 1;
+						j = j /10;
+					}
+				}
+				if(i % count == 0){
+					count++;
+				}
+				cout<<i<<"---"<<factor(i)<<endl;
+			}
+	    }
+};
+
+int main(){
+	Solution * s= new Solution();
+	s->trailingZeroes(20);
+	return 0;
+}
