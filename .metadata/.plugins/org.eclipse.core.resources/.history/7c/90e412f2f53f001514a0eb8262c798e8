@@ -1,0 +1,96 @@
+/*
+ * LeetCode243.cpp
+ *
+ *  Created on: 2015年8月1日
+ *      Author: juanecho
+ */
+#include "leetcode.h"
+/*
+ * Given a singly linked list, determine if it is a palindrome.
+ * Follow up:
+ * Could you do it in O(n) time and O(1) space?
+ */
+ struct ListNode {
+   int val;
+   ListNode *next;
+   ListNode(int x) : val(x), next(NULL) {}
+ };
+
+class Solution {
+public:
+	 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+		 if(headA == NULL || headB == NULL) return NULL;
+		 if(headA ==  headB ) return headA;
+		 ListNode* interNode, *slow, * fast;
+		 slow = fast = headA;
+		 while(headA->next!= NULL){
+			 headA = headA->next;
+		 }
+    	 interNode = headA;
+		 headA->next = headB;
+		 headB->next = fast;
+			 while(fast){
+				 fast  = fast->next;
+				 if(fast)
+					fast = fast->next;
+				 else
+					 return NULL;
+				 slow = slow->next;
+				 if(slow== fast){
+					 cout<<"-222--"<<char(headA->val)<<endl;
+					 cout<<"-222--"<<char(fast->val)<<endl;
+					while(headA != fast){
+							headA = headA->next;
+							fast = fast->next;
+					}
+					interNode->next = NULL;
+					cout<<"---"<<interNode->val<<endl;
+				}
+			}
+		 return headA;
+	 }
+
+	ListNode* creat(string str){
+		ListNode *head,*first;
+		int i = 0, len = str.length();
+		if(len >= 1)
+		{
+			head = new ListNode(str[i]);
+			first = head;
+		}
+		while((i+1)<len)
+		{
+			ListNode* listNode = new ListNode(str[i+1]);
+			head->next = listNode;
+			head = listNode;
+			i++;
+		}
+		return first;
+	}
+};
+int main()
+{
+	  Solution * s= new Solution();
+	  ListNode * head ,*head1;
+//	  while(head!=NULL)
+//	  {
+//		  cout<<char(head->val)<<endl;
+//		  head = head->next;
+//	  }
+//	  fstream in;
+//	  char buffer[256];
+//	  in.open("src/source/source/List/in.txt",ios::in);
+//	  if(in.is_open())
+//	  {
+//		  while(!in.eof())
+//		  {
+//			  in.getline(buffer,256);
+	  string str("12345");
+			  head = s->creat(str);
+			  ListNode * newnode = new ListNode(0);
+			  newnode->next = head;
+			  cout<<s->getIntersectionNode(head,newnode)->val<<endl;
+//		  }
+//	  }
+	  return 0;
+}

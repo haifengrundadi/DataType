@@ -1,0 +1,94 @@
+/*
+ * LeetCode243.cpp
+ *
+ *  Created on: 2015年8月1日
+ *      Author: juanecho
+ */
+#include "leetcode.h"
+/*
+ * Given a singly linked list, determine if it is a palindrome.
+ * Follow up:
+ * Could you do it in O(n) time and O(1) space?
+ */
+ struct ListNode {
+   int val;
+   ListNode *next;
+   ListNode(int x) : val(x), next(NULL) {}
+ };
+
+class Solution {
+public:
+	 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+		 if(headA == NULL || headB == NULL) return NULL;
+		 if(headA ==  headB ) return headA;
+		 ListNode* interNode, *slow, * fast;
+		 slow = fast = headA;
+		 while(headA->next!= NULL){
+			 headA = headA->next;
+		 }
+    	 interNode = headA;
+		 headA->next = headB;
+			 while(fast){
+				 fast  = fast->next;
+				 if(fast)
+					fast = fast->next;
+				 else
+					 return NULL;
+				 cout<<char(slow->val)<<endl;
+				 slow = slow->next;
+
+				 if(slow->val == fast->val){
+					while(headA->val != fast->val){
+							headA = headA->next;
+							fast = fast->next;
+					}
+					interNode->next = NULL;
+				}
+			}
+		 return headA;
+	 }
+
+	ListNode* creat(string str){
+		ListNode *head,*first;
+		int i = 0, len = str.length();
+		if(len >= 1)
+		{
+			head = new ListNode(str[i]);
+			first = head;
+		}
+		while((i+1)<len)
+		{
+			ListNode* listNode = new ListNode(str[i+1]);
+			head->next = listNode;
+			head = listNode;
+			i++;
+		}
+		return first;
+	}
+};
+int main()
+{
+	  Solution * s= new Solution();
+	  ListNode * head ,*head1;
+//	  while(head!=NULL)
+//	  {
+//		  cout<<char(head->val)<<endl;
+//		  head = head->next;
+//	  }
+//	  fstream in;
+//	  char buffer[256];
+//	  in.open("src/source/source/List/in.txt",ios::in);
+//	  if(in.is_open())
+//	  {
+//		  while(!in.eof())
+//		  {
+//			  in.getline(buffer,256);
+	  string str("12345");
+	  string staa("012345");
+			  head = s->creat(str);
+			  head1 = s->creat(staa);
+			  cout<<s->getIntersectionNode(head,head1)->val<<endl;
+//		  }
+//	  }
+	  return 0;
+}
