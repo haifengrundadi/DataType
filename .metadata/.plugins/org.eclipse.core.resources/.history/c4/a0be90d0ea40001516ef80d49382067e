@@ -1,0 +1,17 @@
+#include "leetcode.h"
+class Solution {
+public:
+	 int climbStairs(int n) {
+		 if(n <= 2) return n;
+		 int x = climbStairs(n -1);
+		 int y =  climbStairs(n-2);
+		 return x + y;
+	 }
+};
+
+int main(){
+	Solution * s= new Solution();
+	for(int i = 1; i < 44; i++)
+		cout<<s->climbStairs(i)<<endl;
+	return 0;
+}

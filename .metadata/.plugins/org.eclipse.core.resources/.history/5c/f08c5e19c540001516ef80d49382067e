@@ -1,0 +1,12 @@
+#include "leetcode.h"
+class Solution {
+public:
+	 int climbStairs(int n) {
+
+	 }
+};
+
+int main(){
+	Solution * s= new Solution();
+	return 0;
+}

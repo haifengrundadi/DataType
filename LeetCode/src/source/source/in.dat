@@ -1,0 +1,12 @@
+fstream in;
+	  char buffer[256];
+	  in.open("src/source/source/in.txt",ios::in);
+	  if(in.is_open())
+	  {
+		  while(!in.eof())
+		  {
+			  in.getline(buffer,256);
+			  head = s->creat(buffer);
+			  cout<<s->isPalindrome(head)<<endl;
+		  }
+	  }

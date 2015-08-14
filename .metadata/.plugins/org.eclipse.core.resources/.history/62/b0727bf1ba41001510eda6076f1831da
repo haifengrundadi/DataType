@@ -1,0 +1,13 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+
+    }
+};
+
+int main(){
+	Solution *s = new Solution();
+	return 0;
+}

@@ -1,0 +1,47 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+#include "leetcode.h"
+
+class Solution {
+public:
+	bool isPalindrome(string s) {
+		int len = s.length();
+		int j = len -1;
+		for(int i=0;i < len && i <= j;i++){
+			if(!isalpha(s[i])){
+				i++;
+			}
+			if(!isalpha(s[j])){
+				j--;
+			}
+			if(s[i] == s[j] || abs(s[i]-s[j])==0){
+				i++;
+				j--;
+			}else{
+				return false;
+			}
+		}
+		return true;
+	 }
+};
+
+int main()
+{
+	Solution * s= new Solution();
+	fstream in;
+	char buffer[256];
+	in.open("src/source/source/other/in.txt",ios::in);
+	 if(in.is_open())
+		  {
+			  while(!in.eof())
+			  {
+				  in.getline(buffer,256);
+				  cout<<s->isPalindrome(buffer)<<endl;
+			  }
+		  }
+	return 0;
+}

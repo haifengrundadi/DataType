@@ -1,0 +1,38 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+
+class Solution {
+public:
+	int removeElement(vector<int>& nums,int val) {
+		int len = nums.size();
+		if(len == 0) return 0;
+		for (unsigned i=0; i<len; i++)
+		{
+			if(val == nums[i]){
+				len--;
+			}
+		}
+//		 for (unsigned i=0; i<nums.size(); ++i){
+//		    std::cout << ' ' << nums[i];
+//		 }
+//		 cout<<endl;
+//		 cout<<"size"<<nums.size()<<endl;
+		return len;
+	}
+};
+
+int main(){
+	Solution * s= new Solution();
+	 std::vector<int> myvector;
+	myvector.insert(myvector.begin(),1);
+	myvector.insert(myvector.begin(),1);
+	myvector.insert(myvector.begin(),1);
+	cout<<s->removeElement(myvector,1)<<endl;
+	return 0;
+}
