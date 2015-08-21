@@ -1,0 +1,91 @@
+/*
+ * LeetCode144.cpp
+ *
+ *  Created on: 2015年8月3日
+ *      Author: juanecho
+ */
+
+#include<iostream>
+#include<vector>
+#include"leetcode.h"
+using namespace std;
+
+struct TreeNode {
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) :
+			val(x), left(NULL), right(NULL) {
+	}
+};
+
+class Solution {
+public:
+	bool isBalanced(TreeNode* root) {
+		//层次遍历二叉树
+		if (root == NULL)
+			return true;
+		queue<TreeNode*> q;
+		queue<int> qInt;
+		TreeNode *tree;
+		int i = 0;
+		int flag = 0;
+		q.push(root);
+		qInt.push(1);
+		while (!q.empty()) {
+			tree = q.front();
+			q.pop();
+			i = qInt.front();
+			qInt.pop();
+			if(i - flag >= 2){
+								return false;
+							}
+			if (tree->left != NULL) {
+				q.push(tree->left);
+				qInt.push(i + 1);
+			} else if(flag == 0){
+				flag = i;
+			}
+			if (tree->right != NULL) {
+				q.push(tree->right);
+				qInt.push(i + 1);
+			} else if(flag == 0){
+				flag = i;
+			}
+		}
+		return true;
+	}
+
+	TreeNode* Creat() {
+		TreeNode* root;
+		int ch;
+		cout << "请输入创建一棵二叉树的结点数据" << endl;
+		cin >> ch;
+		if (ch == -1)
+			root = NULL;
+		else {
+			root = new TreeNode(ch);       //生成一个结点
+			root->left = Creat();    //递归建立左子树
+			root->right = Creat();    //递归建立右子树
+		}
+		return root;
+	}
+
+	void output(TreeNode* root) {
+		if (root == NULL)
+			return;
+		cout << root->val << endl;
+		output(root->left);
+		output(root->right);
+	}
+};
+
+int main() {
+	Solution * s = new Solution();
+	cout << "output the tree--1" << endl;
+	TreeNode* l = s->Creat();
+	s->output(l);
+	cout << "is Balanced:" << endl;
+	cout << s->isBalanced(l) << endl;
+}
+

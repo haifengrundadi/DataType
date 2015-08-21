@@ -1,0 +1,20 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+
+class Solution {
+public:
+	int strStr(string haystack, string needle) {
+
+	}
+};
+
+int main(){
+	Solution * s= new Solution();
+	return 0;
+}

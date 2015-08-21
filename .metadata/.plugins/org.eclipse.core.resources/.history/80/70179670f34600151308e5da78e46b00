@@ -1,0 +1,35 @@
+#include "leetcode.h"
+#include<stdint.h>
+
+class Solution {
+public:
+	bool isUgly(int num) {
+		if(num <= 0) return 0;
+		if(num == 1) return 1;
+		bool arr[num];
+		for (int i = 2; i < num; i++)
+				arr[i] = true;
+		for (int i = 2; i*i < num; i++) {
+			if(!arr[i]) continue;
+			for(int j = i * i; j < num; j += i){
+				arr[j] = false;
+			}
+		}
+		for (int i = 2; i < num; i++) {
+			cout<<i<<"\t";
+			if(num % i == 0 ){
+				if(i > 5 && arr[i])
+					return false;
+			}
+		}
+		cout<<endl;
+		return true;
+	}
+};
+
+int main(){
+	Solution * s= new Solution();
+	cout<<s->isUgly(6)<<endl;
+	cout<<s->isUgly(14)<<endl;
+	return 0;
+}

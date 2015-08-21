@@ -10,78 +10,69 @@
 using namespace std;
 
 struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- };
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) :
+			val(x), left(NULL), right(NULL) {
+	}
+};
 
 class Solution {
 public:
-	 vector<int> inorderTraversal(TreeNode* root) {
-	        vector<TreeNode*> s;
-	        vector<int > result;
-	        TreeNode*p=  root;
-	        s.push_back(NULL);
-	        while(p!=NULL)
-	        {
-	        	if(p->right!= NULL)
-	        		s.push_back(p->right);
-	        	if(p->left!=NULL)
-	        	{
-	        		p = p->left;
-	        		s.push_back(p);
-	        	}
-	        	else
-	        	{
-	        		result.push_back(p->val);
-	        		p = s.back();
-	        		s.pop_back();
-	        	}
-	        }
-	        return result;
-	 }
-
-		TreeNode* Creat( )
-		{
-			TreeNode* root;
-			int ch;
-			cout<<"请输入创建一棵二叉树的结点数据"<<endl;
-		 	 cin>>ch;
-		    if (ch==-1)
-		    	root = NULL;
-		    else
-		    {
-		    	 root = new TreeNode(ch);       //生成一个结点
-		         root->left   =  Creat( );    //递归建立左子树
-		         root->right = Creat( );    //递归建立右子树
-		    }
-		    return root;
+	vector<int> inorderTraversal(TreeNode* root) {
+		vector<TreeNode*> s;
+		vector<int> r;
+		TreeNode*p = root;
+		while (!s.empty() || p!=NULL) {
+			while(p->left!= NULL){
+				s.push_back(p);
+				p= p->left;
+			}
+			r.push_back(p->val);
+			while(p->right == NULL && !s.empty()){
+				p = s.back();
+				s.pop_back();
+				r.push_back(p->val);
+			}
+			p = p->right;
 		}
+		return r;
+	}
 
-		void  output(TreeNode* root )
-		{
-		  if(root == NULL)
-			  return;
-		  cout<<root->val<<endl;
-		  output(root->left);
-		  output(root->right);
+	TreeNode* Creat() {
+		TreeNode* root;
+		int ch;
+		cout << "请输入创建一棵二叉树的结点数据" << endl;
+		cin >> ch;
+		if (ch == -1)
+			root = NULL;
+		else {
+			root = new TreeNode(ch);       //生成一个结点
+			root->left = Creat();    //递归建立左子树
+			root->right = Creat();    //递归建立右子树
 		}
+		return root;
+	}
+
+	void output(TreeNode* root) {
+		if (root == NULL)
+			return;
+		cout << root->val << endl;
+		output(root->left);
+		output(root->right);
+	}
 };
 
-	/*int main()
-	{
-		Solution * s = new Solution();
-		cout<<"output the tree--1"<<endl;
-		TreeNode* l = s->Creat();
-		s->output(l);
-		vector<int> x = s->inorderTraversal(l);
-		cout<<"output the tree--2"<<endl;
-		vector<int>::iterator it;
-		for(it=x.begin();it!=x.end();it++)
-		    cout<<*it<<endl;
-	}*/
-
-
-
+//int main() {
+//	Solution * s = new Solution();
+//	cout << "output the tree--1" << endl;
+//	TreeNode* l = s->Creat();
+//	s->output(l);
+//	cout << "output the tree--2" << endl;
+//	vector<int> x = s->inorderTraversal(l);
+//	vector<int>::iterator it;
+//	for (it = x.begin(); it != x.end(); it++)
+//		cout << *it << endl;
+//}
 

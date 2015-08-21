@@ -1,0 +1,66 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+#include "leetcode.h"
+
+class Solution {
+public:
+	int maxProfit(vector<int>& prices) {
+		vector<int> left, right;
+		int size = prices.size();
+		if (size == 0)
+			return 0;
+		int  reuslt = 0;
+		//
+		int min = prices[0], minIndex = 0;
+		int max = 0, maxBegin = 0, maxEnd = 0;
+
+		int minM = 0, minMIndex = 0;
+		int maxM = 0, maxMBegin = 0, maxMEnd = 0;
+		int i = 0, m = 0;
+		while (i < size) {
+			if (prices[i] - min >= max) {
+				maxBegin = minIndex;
+				max = prices[i] - min;
+				maxEnd = i;
+			}
+			if (prices[i] <= min) {
+				min = prices[i];
+				minIndex = i;
+			}
+			m = i;
+
+			minM = prices[i], minMIndex = i;
+			maxM = 0, maxMBegin = i, maxMEnd = i;
+			while (m < size) {
+				if (prices[m] - minM >= maxM) {
+					maxMBegin = minMIndex;
+					maxM = prices[m] - minM;
+					maxMEnd = m;
+				}
+				if (prices[m] <= minM) {
+					minM = prices[m];
+					minMIndex = m;
+				}
+				m++;
+			}
+			reuslt = maxM + max > reuslt ? maxM + max : reuslt;
+			i++;
+		}
+		return reuslt;
+	}
+};
+
+int main() {
+	Solution * s = new Solution();
+	vector<int> tem;
+	int nums[] = { 8, 3, 6, 2, 8, 8, 8, 4, 2, 0, 7, 2, 9, 4, 9 };
+	for (int i = 0; i < 15; i++) {
+		tem.push_back(nums[i]);
+	}
+	cout << s->maxProfit(tem) << endl;
+	return 0;
+}

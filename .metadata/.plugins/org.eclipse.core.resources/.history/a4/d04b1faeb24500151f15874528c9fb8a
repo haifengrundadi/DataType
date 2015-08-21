@@ -1,0 +1,51 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	vector<vector<int> > threeSum(vector<int>& nums) {
+		vector<vector<int> > v;
+		int size = nums.size();
+		if(size <= 2) return v;
+		vector<int> v_in;
+		map<int, int> m;
+		vector<int>::iterator it;
+		map <int, int>::iterator m1_Iter;
+		for(it = nums.begin(); it != nums.end(); it++){
+			 if(m.find(*it) == m.end()){
+				 m.insert(pair<int,int>(*it, 1));
+			 }else{
+				 m.find(*it)->second += 1;
+			 }
+		}
+		for ( m1_Iter = m.begin( ); m1_Iter != m.end( ); m1_Iter++ ){
+		      cout <<  m1_Iter->first<<" "<<m1_Iter->second<<endl;
+		}
+//		int i = 0, j = size-1;
+//		while(i < j){
+//
+//		}
+		return v;
+	}
+};
+
+int main(){
+	Solution *s = new Solution();
+	vector<vector<int> > v;
+	vector<int> nums;
+	int arr[] = {-1,0,1,2,-1,-4};
+	for(int i =0; i < sizeof(arr)/ sizeof(int); i++){
+		nums.push_back(arr[i]);
+	}
+	v = s->threeSum(nums);
+//	int size = v.size();
+//	vector<int>::iterator it;
+//	vector<int> tem;
+//	for(int i =0; i < size;i++){
+//		tem.clear();
+//		tem = v[i];
+//		for(it = tem.begin(); it != tem.end();tem++){
+//			cout<<*it<<"\t";
+//		}
+//		cout<<endl;
+//	}
+}

@@ -1,0 +1,52 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	 string addBinary(string a, string b) {
+		 int len_a = a.length();
+		 int len_b = b.length();
+		 int flag = 0, i = 0;
+		 string str="";
+		 int min = len_a <= len_b?len_a:len_b;
+		 for(i=0;i < min;i++){
+			 if((a[i] == '1' && b[i]=='1') || (a[i] == '1' && flag ==1) || (b[i] == '1' && flag ==1)){
+				 str +='0' + flag;
+				 flag = 1;
+			 }else{
+				 flag = 0;
+				 str += a[i] - 32 + b[i] -32+'0';
+			 }
+		 }
+		while(i < len_a){
+			if(a[i] == '1' && flag == 1){
+				str+='0';
+				flag = 1;
+			}else{
+				flag = 0;
+				str+=a[i];
+			}
+			i++;
+		}
+		while(i < len_b){
+			if(b[i] == '1' && flag == 1){
+				str+='0';
+				flag = 1;
+			}else{
+				flag = 0;
+				str+=b[i];
+			}
+			i++;
+		}
+		 if(flag == 1)
+			 str +='1';
+		 return str;
+	  }
+};
+
+int main(){
+	Solution *s = new Solution();
+	string a = "11";
+	string b = "1";
+	cout<<s->addBinary(a,b)<<endl;
+	return 0;
+}

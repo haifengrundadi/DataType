@@ -1,0 +1,66 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	 string addBinary(string a, string b) {
+		 int len_a = a.length();
+		 int len_b = b.length();
+		 int flag = 0;
+		 string str="";
+		 string str1="";
+		 int min = len_a <= len_b?len_a:len_b;
+		 int x = min;
+		 while(min>0){
+			 if((a[min-1] == '1' && b[min-1]=='1') || (a[min-1] == '1' && flag ==1) || (b[min-1] == '1' && flag ==1)){
+				 str +='0' + flag;
+				 flag = 1;
+			 }else{
+				 flag = 0;
+				 str += a[min-1] - '0' + b[min-1] - '0'+'0';
+			 }
+		 	 min--;
+		 }
+		while(x < len_a){
+			if(a[x] == '1' && flag == 1){
+				str+='0';
+				flag = 1;
+			}else{
+				flag = 0;
+				str+=a[x];
+			}
+			x++;
+		}
+		while(x < len_b){
+			if(b[x] == '1' && flag == 1){
+				str+='0';
+				flag = 1;
+			}else{
+				flag = 0;
+				str+=b[x];
+			}
+			x++;
+		}
+		 if(flag == 1)
+			 str +='1';
+		 int len = str.length();
+		 while(len > 0){
+			 str1+= str[len -1];
+			 len--;
+		 }
+		 return str1;
+	  }
+};
+
+int main(){
+	Solution *s = new Solution();
+	string a = "11";
+	string b = "1";
+	cout<<s->addBinary(a,b)<<endl;
+	a="0";
+	b="0";
+	cout<<s->addBinary(a,b)<<endl;
+	a="1010";
+	b="1011";
+	cout<<s->addBinary(a,b)<<endl;
+	return 0;
+}

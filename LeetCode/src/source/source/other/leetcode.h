@@ -16,6 +16,7 @@
 #include<limits>
 #include<map>
 #include<stack>
+#include<algorithm>
 using namespace std;
 
 

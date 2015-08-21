@@ -1,0 +1,68 @@
+/*
+ * LeetCode005.cpp
+ *
+ *  Created on: 2015年8月4日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+
+class Solution {
+public:
+	bool isValidSudoku(vector<vector<char> >& board) {
+		bool valid[9][9][3] = { false }; //横 竖 cell
+		map<char, char> m;
+		for (int i = 0; i < 9; i++) {
+			m.clear();
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] == '.') {
+					valid[i][j][0] = true;
+				} else if (m.find(board[i][j]) == -1) {
+					m.insert(pair<char, char>(board[i][j]));
+					valid[i][j][0] = true;
+				} else
+					return false;
+			}
+		}
+		m.clear();
+		for (int j = 0; j < 9; j++) {
+			m.clear();
+			for (int i = 0; i < 9; i++) {
+				if (board[i][j] == '.') {
+					valid[i][j][1] = true;
+				} else if (m.find(board[i][j]) == -1) {
+					m.insert(pair<char, char>(board[i][j]));
+					valid[i][j][1] = true;
+				} else
+					return false;
+			}
+		}
+		m.clear();
+		int k = 0,n = 0;
+		bool flag = false;
+		while(n <= 6){
+				while(k <= 6){
+					m.clear();
+					for (int i = 0+k; i < 3+k; i++) {
+						for (int j = 0+n; j < 3+n; j++) {
+							if (board[i][j] == '.') {
+								valid[i][j][2] = true;
+							} else if (m.find(board[i][j]) == -1) {
+								m.insert(pair<char, char>(board[i][j]));
+								valid[i][j][2] = true;
+							} else
+								return false;
+						}
+					}
+					k += 3;
+				}
+		}
+	}
+};
+
+int main() {
+	Solution * s = new Solution();
+	for (int i = 1; i < 10; i++)
+//		cout<<s->countAndSay(i)<<endl;
+		return 0;
+}
