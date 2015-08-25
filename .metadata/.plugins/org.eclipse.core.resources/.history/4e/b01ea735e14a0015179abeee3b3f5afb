@@ -1,0 +1,19 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	vector<int> grayCode(int n) {
+
+	 }
+};
+
+int main() {
+	Solution * s = new Solution();
+	vector<int> nums;
+	nums = s->grayCode(2);
+	vector<int>::iterator it;
+	for(it = nums.begin(); it != nums.end();it++){
+		cout<<*it<<"\t";
+	}
+	return 0;
+}

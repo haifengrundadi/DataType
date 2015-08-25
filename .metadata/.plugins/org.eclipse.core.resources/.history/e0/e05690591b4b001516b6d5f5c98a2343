@@ -1,0 +1,103 @@
+/*
+ * LeetCode235.cpp
+ *
+ *  Created on: 2015年8月3日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+#include <sstream>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ };
+
+class Solution {
+public:
+	string to_string(int val){
+		stringstream ss;
+		ss<<val;
+		string s=ss.str();
+		return s;
+	}
+
+	vector<string> binaryTreePaths(TreeNode* root) {
+		//DFS
+		vector<string> v;
+		string str="";
+		vector<TreeNode*> cur;
+		TreeNode * t=root;
+		if(root == NULL) return v;
+		cur.push_back(root);
+		while(!cur.empty()){
+			while(t->left!= NULL){
+				cur.push_back(t->left);
+				str.append(to_string(t->val)).append("->");
+				cout<<"----"<<str<<endl;
+				t = t->left;
+			}
+			if(t->right == NULL){
+				str.append(to_string(t->val));
+				v.push_back(str);
+			}
+			cout<<str<<endl;
+			while(t->right == NULL && !cur.empty()){
+				t = cur.back();
+				cur.pop_back();
+				cout<<"****"<<str<<endl;
+				if(str.size() > 3)
+					str =  str.substr(0,str.length()-3);
+			}
+			cout<<"t="<<to_string(t->val)<<endl;
+			t = t->right;
+			cout<<"t="<<to_string(t->val)<<endl;
+		}
+		if(t != NULL){str.append("->").append(to_string(t->val));v.push_back(str);};
+		return v;
+	}
+
+
+	TreeNode* Creat( )
+	{
+		TreeNode* root;
+		int ch;
+		cout<<"请输入创建一棵二叉树的结点数据"<<endl;
+	 	 cin>>ch;
+	    if (ch==-1)
+	    	root = NULL;
+	    else
+	    {
+	    	 root = new TreeNode(ch);       //生成一个结点
+	         root->left   =  Creat( );    //递归建立左子树
+	         root->right = Creat( );    //递归建立右子树
+	    }
+	    return root;
+	}
+
+	void  output(TreeNode* root )
+	{
+	  if(root == NULL)
+		  return;
+	  cout<<root->val<<endl;
+	  output(root->left);
+	  output(root->right);
+	}
+};
+
+//int main()
+//{
+//	Solution * s = new Solution();
+//	vector<string> vstr;
+//	cout<<"output the tree--1"<<endl;
+//	TreeNode* root = s->Creat();
+//	vstr=s->binaryTreePaths(root);
+//	vector<string>::iterator it;
+//		for(it = vstr.begin(); it != vstr.end();it++){
+//			cout<<*it<<"\t";
+//		}
+//}
+

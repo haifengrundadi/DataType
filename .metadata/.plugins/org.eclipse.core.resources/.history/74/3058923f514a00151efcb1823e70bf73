@@ -1,0 +1,89 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	void sortColors(vector<int>& nums) {
+		int tem = 0;
+		int size = nums.size();
+		if (size <= 1)
+			return;
+		int front = nums[0], j = 1, end = nums[size - 1];
+		bool flag = false;
+		for (int i = 0; i < size; i++) {
+			front = nums[i];
+			if (!flag) {
+				if (size - j < i) {
+					j = 1;
+					end = nums[size - 1];
+					flag = true;
+					i--;
+					continue;
+				}
+				if (front != 0) {
+					while (end && j < size) {
+						j++;
+						end = nums[size - j];
+					}
+//					cout<<"j----"<<j<<"  end="<<end<<"   i="<<i<<endl;
+					if (size - j < i) {
+						j = 1;
+						end = nums[size - 1];
+						flag = true;
+						i--;
+						continue;
+					}
+					tem = end;
+					nums[size - j] = nums[i];
+					nums[i] = tem;
+					j++;
+					end = nums[size - j];
+				}
+//				cout << "---#--------" << front << "===i==" << i << " j=" << j
+//														<< endl;
+
+			} else {
+//				cout << "-----------" << front << "===i==" << i << " j=" << j
+//						<< endl;
+				if (front != 1) {
+					if (size - j < i) {
+						return;
+					}
+					while (end != 1&& j < size) {
+						j++;
+						if (size - j < i) {
+							return;
+						}
+						end = nums[size - j];
+					}
+					tem = end;
+					nums[size - j] = nums[i];
+					nums[i] = tem;
+					j++;
+					end = nums[size - j];
+				}
+			}
+			cout << "*********** "<<i<<" ***********" << endl;
+					vector<int>::iterator it;
+					for (it = nums.begin(); it != nums.end(); it++) {
+						cout << *it << "\t";
+					}
+					cout<<endl;
+		}
+		cout << "*********** last ***********" << endl;
+		vector<int>::iterator it;
+		for (it = nums.begin(); it != nums.end(); it++) {
+			cout << *it << "\t";
+		}
+	}
+};
+
+int main() {
+	Solution * s = new Solution();
+	vector<int> nums;
+	int arr[] = {2,1};
+	for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+		nums.push_back(arr[i]);
+	}
+	s->sortColors(nums);
+	return 0;
+}

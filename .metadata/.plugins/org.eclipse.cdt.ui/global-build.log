@@ -1,4 +1,4 @@
-22:42:38 **** Build of configuration Debug for project LeetCode ****
+22:12:55 **** Build of configuration Debug for project LeetCode ****
 make all 
 Building file: ../src/source/source/other/LeetCode001.cpp
 Invoking: GCC C++ Compiler
@@ -58,6 +58,37 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode014.d" -MT"src/source/source/other/LeetCode014.d" -o "src/source/source/other/LeetCode014.o" "../src/source/source/other/LeetCode014.cpp"
 Finished building: ../src/source/source/other/LeetCode014.cpp
  
+Building file: ../src/source/source/other/LeetCode015.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode015.d" -MT"src/source/source/other/LeetCode015.d" -o "src/source/source/other/LeetCode015.o" "../src/source/source/other/LeetCode015.cpp"
+../src/source/source/other/LeetCode015.cpp: In member function ‘std::vector<std::vector<int> > Solution::threeSum(std::vector<int>&)’:
+../src/source/source/other/LeetCode015.cpp:9:38: warning: unused variable ‘begin’ [-Wunused-variable]
+    int i = 0, j = size - 1, tem = 0, begin = 0, end = 0;
+                                      ^
+../src/source/source/other/LeetCode015.cpp:9:49: warning: unused variable ‘end’ [-Wunused-variable]
+    int i = 0, j = size - 1, tem = 0, begin = 0, end = 0;
+                                                 ^
+Finished building: ../src/source/source/other/LeetCode015.cpp
+ 
+Building file: ../src/source/source/other/LeetCode016.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode016.d" -MT"src/source/source/other/LeetCode016.d" -o "src/source/source/other/LeetCode016.o" "../src/source/source/other/LeetCode016.cpp"
+Finished building: ../src/source/source/other/LeetCode016.cpp
+ 
+Building file: ../src/source/source/other/LeetCode018.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode018.d" -MT"src/source/source/other/LeetCode018.d" -o "src/source/source/other/LeetCode018.o" "../src/source/source/other/LeetCode018.cpp"
+Finished building: ../src/source/source/other/LeetCode018.cpp
+ 
+Building file: ../src/source/source/other/LeetCode020.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode020.d" -MT"src/source/source/other/LeetCode020.d" -o "src/source/source/other/LeetCode020.o" "../src/source/source/other/LeetCode020.cpp"
+../src/source/source/other/LeetCode020.cpp: In member function ‘bool Solution::isValid(std::string)’:
+../src/source/source/other/LeetCode020.cpp:13:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i =0; i < s.length(); i++){
+                              ^
+Finished building: ../src/source/source/other/LeetCode020.cpp
+ 
 Building file: ../src/source/source/other/LeetCode026.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode026.d" -MT"src/source/source/other/LeetCode026.d" -o "src/source/source/other/LeetCode026.o" "../src/source/source/other/LeetCode026.cpp"
@@ -67,6 +98,11 @@ Building file: ../src/source/source/other/LeetCode027.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode027.d" -MT"src/source/source/other/LeetCode027.d" -o "src/source/source/other/LeetCode027.o" "../src/source/source/other/LeetCode027.cpp"
 Finished building: ../src/source/source/other/LeetCode027.cpp
+ 
+Building file: ../src/source/source/other/LeetCode028.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode028.d" -MT"src/source/source/other/LeetCode028.d" -o "src/source/source/other/LeetCode028.o" "../src/source/source/other/LeetCode028.cpp"
+Finished building: ../src/source/source/other/LeetCode028.cpp
  
 Building file: ../src/source/source/other/LeetCode036.cpp
 Invoking: GCC C++ Compiler
@@ -78,6 +114,21 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode038.d" -MT"src/source/source/other/LeetCode038.d" -o "src/source/source/other/LeetCode038.o" "../src/source/source/other/LeetCode038.cpp"
 Finished building: ../src/source/source/other/LeetCode038.cpp
  
+Building file: ../src/source/source/other/LeetCode053.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode053.d" -MT"src/source/source/other/LeetCode053.d" -o "src/source/source/other/LeetCode053.o" "../src/source/source/other/LeetCode053.cpp"
+Finished building: ../src/source/source/other/LeetCode053.cpp
+ 
+Building file: ../src/source/source/other/LeetCode058.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode058.d" -MT"src/source/source/other/LeetCode058.d" -o "src/source/source/other/LeetCode058.o" "../src/source/source/other/LeetCode058.cpp"
+Finished building: ../src/source/source/other/LeetCode058.cpp
+ 
+Building file: ../src/source/source/other/LeetCode062.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode062.d" -MT"src/source/source/other/LeetCode062.d" -o "src/source/source/other/LeetCode062.o" "../src/source/source/other/LeetCode062.cpp"
+Finished building: ../src/source/source/other/LeetCode062.cpp
+ 
 Building file: ../src/source/source/other/LeetCode065.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode065.d" -MT"src/source/source/other/LeetCode065.d" -o "src/source/source/other/LeetCode065.o" "../src/source/source/other/LeetCode065.cpp"
@@ -88,10 +139,61 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode066.d" -MT"src/source/source/other/LeetCode066.d" -o "src/source/source/other/LeetCode066.o" "../src/source/source/other/LeetCode066.cpp"
 Finished building: ../src/source/source/other/LeetCode066.cpp
  
+Building file: ../src/source/source/other/LeetCode067.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode067.d" -MT"src/source/source/other/LeetCode067.d" -o "src/source/source/other/LeetCode067.o" "../src/source/source/other/LeetCode067.cpp"
+Finished building: ../src/source/source/other/LeetCode067.cpp
+ 
 Building file: ../src/source/source/other/LeetCode070.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode070.d" -MT"src/source/source/other/LeetCode070.d" -o "src/source/source/other/LeetCode070.o" "../src/source/source/other/LeetCode070.cpp"
 Finished building: ../src/source/source/other/LeetCode070.cpp
+ 
+Building file: ../src/source/source/other/LeetCode075.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode075.d" -MT"src/source/source/other/LeetCode075.d" -o "src/source/source/other/LeetCode075.o" "../src/source/source/other/LeetCode075.cpp"
+Finished building: ../src/source/source/other/LeetCode075.cpp
+ 
+Building file: ../src/source/source/other/LeetCode089.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode089.d" -MT"src/source/source/other/LeetCode089.d" -o "src/source/source/other/LeetCode089.o" "../src/source/source/other/LeetCode089.cpp"
+Finished building: ../src/source/source/other/LeetCode089.cpp
+ 
+Building file: ../src/source/source/other/LeetCode118.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode118.d" -MT"src/source/source/other/LeetCode118.d" -o "src/source/source/other/LeetCode118.o" "../src/source/source/other/LeetCode118.cpp"
+../src/source/source/other/LeetCode118.cpp: In member function ‘std::vector<std::vector<int> > Solution::generate(int)’:
+../src/source/source/other/LeetCode118.cpp:22:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j = 1; j < tem.size(); j++){
+                                ^
+Finished building: ../src/source/source/other/LeetCode118.cpp
+ 
+Building file: ../src/source/source/other/LeetCode119.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode119.d" -MT"src/source/source/other/LeetCode119.d" -o "src/source/source/other/LeetCode119.o" "../src/source/source/other/LeetCode119.cpp"
+Finished building: ../src/source/source/other/LeetCode119.cpp
+ 
+Building file: ../src/source/source/other/LeetCode121.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode121.d" -MT"src/source/source/other/LeetCode121.d" -o "src/source/source/other/LeetCode121.o" "../src/source/source/other/LeetCode121.cpp"
+../src/source/source/other/LeetCode121.cpp: In member function ‘int Solution::maxProfit(std::vector<int>&)’:
+../src/source/source/other/LeetCode121.cpp:16:16: warning: variable ‘maxBegin’ set but not used [-Wunused-but-set-variable]
+   int max = 0, maxBegin = 0, maxEnd = 0;
+                ^
+../src/source/source/other/LeetCode121.cpp:16:30: warning: variable ‘maxEnd’ set but not used [-Wunused-but-set-variable]
+   int max = 0, maxBegin = 0, maxEnd = 0;
+                              ^
+Finished building: ../src/source/source/other/LeetCode121.cpp
+ 
+Building file: ../src/source/source/other/LeetCode122.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode122.d" -MT"src/source/source/other/LeetCode122.d" -o "src/source/source/other/LeetCode122.o" "../src/source/source/other/LeetCode122.cpp"
+Finished building: ../src/source/source/other/LeetCode122.cpp
+ 
+Building file: ../src/source/source/other/LeetCode123.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode123.d" -MT"src/source/source/other/LeetCode123.d" -o "src/source/source/other/LeetCode123.o" "../src/source/source/other/LeetCode123.cpp"
+Finished building: ../src/source/source/other/LeetCode123.cpp
  
 Building file: ../src/source/source/other/LeetCode125.cpp
 Invoking: GCC C++ Compiler
@@ -101,11 +203,39 @@ Finished building: ../src/source/source/other/LeetCode125.cpp
 Building file: ../src/source/source/other/LeetCode149.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode149.d" -MT"src/source/source/other/LeetCode149.d" -o "src/source/source/other/LeetCode149.o" "../src/source/source/other/LeetCode149.cpp"
+../src/source/source/other/LeetCode149.cpp:19:14: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int count = 0;
+              ^
+../src/source/source/other/LeetCode149.cpp: In member function ‘int Solution::maxPoints(std::vector<Point>&)’:
+../src/source/source/other/LeetCode149.cpp:79:7: warning: unused variable ‘size’ [-Wunused-variable]
+   int size = pNum.size();
+       ^
+../src/source/source/other/LeetCode149.cpp:81:26: warning: unused variable ‘flag’ [-Wunused-variable]
+   int temx = 0, temy = 0,flag = 0;
+                          ^
 Finished building: ../src/source/source/other/LeetCode149.cpp
+ 
+Building file: ../src/source/source/other/LeetCode153.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode153.d" -MT"src/source/source/other/LeetCode153.d" -o "src/source/source/other/LeetCode153.o" "../src/source/source/other/LeetCode153.cpp"
+Finished building: ../src/source/source/other/LeetCode153.cpp
  
 Building file: ../src/source/source/other/LeetCode165.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode165.d" -MT"src/source/source/other/LeetCode165.d" -o "src/source/source/other/LeetCode165.o" "../src/source/source/other/LeetCode165.cpp"
+../src/source/source/other/LeetCode165.cpp: In member function ‘int Solution::compareVersion(std::string, std::string)’:
+../src/source/source/other/LeetCode165.cpp:15:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while(i < version1.length() && version1[i] == '0')i++;
+                               ^
+../src/source/source/other/LeetCode165.cpp:21:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while(i < version2.length() && version2[i] == '0')i++;
+                               ^
+../src/source/source/other/LeetCode165.cpp:54:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while(m < strBB.length()){
+                            ^
+../src/source/source/other/LeetCode165.cpp:66:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while(m < strAA.length()){
+                            ^
 Finished building: ../src/source/source/other/LeetCode165.cpp
  
 Building file: ../src/source/source/other/LeetCode168.cpp
@@ -185,12 +315,44 @@ Finished building: ../src/source/source/other/LeetCode223.cpp
 Building file: ../src/source/source/other/LeetCode228.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode228.d" -MT"src/source/source/other/LeetCode228.d" -o "src/source/source/other/LeetCode228.o" "../src/source/source/other/LeetCode228.cpp"
+../src/source/source/other/LeetCode228.cpp: In function ‘int main()’:
+../src/source/source/other/LeetCode228.cpp:32:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i =0; i < sizeof(nums) / sizeof(int); i++){
+                                              ^
+../src/source/source/other/LeetCode228.cpp:36:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0; i < ve.size(); i++){
+                           ^
 Finished building: ../src/source/source/other/LeetCode228.cpp
  
 Building file: ../src/source/source/other/LeetCode231.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode231.d" -MT"src/source/source/other/LeetCode231.d" -o "src/source/source/other/LeetCode231.o" "../src/source/source/other/LeetCode231.cpp"
 Finished building: ../src/source/source/other/LeetCode231.cpp
+ 
+Building file: ../src/source/source/other/LeetCode238.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode238.d" -MT"src/source/source/other/LeetCode238.d" -o "src/source/source/other/LeetCode238.o" "../src/source/source/other/LeetCode238.cpp"
+Finished building: ../src/source/source/other/LeetCode238.cpp
+ 
+Building file: ../src/source/source/other/LeetCode258.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode258.d" -MT"src/source/source/other/LeetCode258.d" -o "src/source/source/other/LeetCode258.o" "../src/source/source/other/LeetCode258.cpp"
+Finished building: ../src/source/source/other/LeetCode258.cpp
+ 
+Building file: ../src/source/source/other/LeetCode260.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode260.d" -MT"src/source/source/other/LeetCode260.d" -o "src/source/source/other/LeetCode260.o" "../src/source/source/other/LeetCode260.cpp"
+Finished building: ../src/source/source/other/LeetCode260.cpp
+ 
+Building file: ../src/source/source/other/LeetCode263.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode263.d" -MT"src/source/source/other/LeetCode263.d" -o "src/source/source/other/LeetCode263.o" "../src/source/source/other/LeetCode263.cpp"
+Finished building: ../src/source/source/other/LeetCode263.cpp
+ 
+Building file: ../src/source/source/other/LeetCode264.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode264.d" -MT"src/source/source/other/LeetCode264.d" -o "src/source/source/other/LeetCode264.o" "../src/source/source/other/LeetCode264.cpp"
+Finished building: ../src/source/source/other/LeetCode264.cpp
  
 Building file: ../src/source/source/Tree/LeetCode094.cpp
 Invoking: GCC C++ Compiler
@@ -202,15 +364,62 @@ Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode100.d" -MT"src/source/source/Tree/LeetCode100.d" -o "src/source/source/Tree/LeetCode100.o" "../src/source/source/Tree/LeetCode100.cpp"
 Finished building: ../src/source/source/Tree/LeetCode100.cpp
  
+Building file: ../src/source/source/Tree/LeetCode101.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode101.d" -MT"src/source/source/Tree/LeetCode101.d" -o "src/source/source/Tree/LeetCode101.o" "../src/source/source/Tree/LeetCode101.cpp"
+Finished building: ../src/source/source/Tree/LeetCode101.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode102.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode102.d" -MT"src/source/source/Tree/LeetCode102.d" -o "src/source/source/Tree/LeetCode102.o" "../src/source/source/Tree/LeetCode102.cpp"
+../src/source/source/Tree/LeetCode102.cpp: In member function ‘std::vector<std::vector<int> > Solution::levelOrderBottom(TreeNode*)’:
+../src/source/source/Tree/LeetCode102.cpp:35:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(v.size() < i+1){
+                     ^
+Finished building: ../src/source/source/Tree/LeetCode102.cpp
+ 
 Building file: ../src/source/source/Tree/LeetCode104.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode104.d" -MT"src/source/source/Tree/LeetCode104.d" -o "src/source/source/Tree/LeetCode104.o" "../src/source/source/Tree/LeetCode104.cpp"
 Finished building: ../src/source/source/Tree/LeetCode104.cpp
  
+Building file: ../src/source/source/Tree/LeetCode107.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode107.d" -MT"src/source/source/Tree/LeetCode107.d" -o "src/source/source/Tree/LeetCode107.o" "../src/source/source/Tree/LeetCode107.cpp"
+../src/source/source/Tree/LeetCode107.cpp: In member function ‘std::vector<std::vector<int> > Solution::levelOrderBottom(TreeNode*)’:
+../src/source/source/Tree/LeetCode107.cpp:35:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(v.size() < i+1){
+                     ^
+Finished building: ../src/source/source/Tree/LeetCode107.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode108.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode108.d" -MT"src/source/source/Tree/LeetCode108.d" -o "src/source/source/Tree/LeetCode108.o" "../src/source/source/Tree/LeetCode108.cpp"
+../src/source/source/Tree/LeetCode108.cpp: In member function ‘TreeNode* Solution::sortedArrayToSubBST(std::vector<int>&, int, int)’:
+../src/source/source/Tree/LeetCode108.cpp:15:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(high < low || low>= nums.size() || high < 0 ) return NULL;
+                                     ^
+Finished building: ../src/source/source/Tree/LeetCode108.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode110.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode110.d" -MT"src/source/source/Tree/LeetCode110.d" -o "src/source/source/Tree/LeetCode110.o" "../src/source/source/Tree/LeetCode110.cpp"
+Finished building: ../src/source/source/Tree/LeetCode110.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode111.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode111.d" -MT"src/source/source/Tree/LeetCode111.d" -o "src/source/source/Tree/LeetCode111.o" "../src/source/source/Tree/LeetCode111.cpp"
+Finished building: ../src/source/source/Tree/LeetCode111.cpp
+ 
 Building file: ../src/source/source/Tree/LeetCode112.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode112.d" -MT"src/source/source/Tree/LeetCode112.d" -o "src/source/source/Tree/LeetCode112.o" "../src/source/source/Tree/LeetCode112.cpp"
 Finished building: ../src/source/source/Tree/LeetCode112.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode116.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode116.d" -MT"src/source/source/Tree/LeetCode116.d" -o "src/source/source/Tree/LeetCode116.o" "../src/source/source/Tree/LeetCode116.cpp"
+Finished building: ../src/source/source/Tree/LeetCode116.cpp
  
 Building file: ../src/source/source/Tree/LeetCode144.cpp
 Invoking: GCC C++ Compiler
@@ -226,6 +435,11 @@ Building file: ../src/source/source/Tree/LeetCode235.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode235.d" -MT"src/source/source/Tree/LeetCode235.d" -o "src/source/source/Tree/LeetCode235.o" "../src/source/source/Tree/LeetCode235.cpp"
 Finished building: ../src/source/source/Tree/LeetCode235.cpp
+ 
+Building file: ../src/source/source/Tree/LeetCode257.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/Tree/LeetCode257.d" -MT"src/source/source/Tree/LeetCode257.d" -o "src/source/source/Tree/LeetCode257.o" "../src/source/source/Tree/LeetCode257.cpp"
+Finished building: ../src/source/source/Tree/LeetCode257.cpp
  
 Building file: ../src/source/source/List/LeetCode002.cpp
 Invoking: GCC C++ Compiler
@@ -319,132 +533,47 @@ Finished building: ../src/source/source/Teststring.cpp
  
 Building target: LeetCode
 Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
+g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode015.o ./src/source/source/other/LeetCode016.o ./src/source/source/other/LeetCode018.o ./src/source/source/other/LeetCode020.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode028.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode053.o ./src/source/source/other/LeetCode058.o ./src/source/source/other/LeetCode062.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode067.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode075.o ./src/source/source/other/LeetCode089.o ./src/source/source/other/LeetCode118.o ./src/source/source/other/LeetCode119.o ./src/source/source/other/LeetCode121.o ./src/source/source/other/LeetCode122.o ./src/source/source/other/LeetCode123.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode153.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o ./src/source/source/other/LeetCode238.o ./src/source/source/other/LeetCode258.o ./src/source/source/other/LeetCode260.o ./src/source/source/other/LeetCode263.o ./src/source/source/other/LeetCode264.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode101.o ./src/source/source/Tree/LeetCode102.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode107.o ./src/source/source/Tree/LeetCode108.o ./src/source/source/Tree/LeetCode110.o ./src/source/source/Tree/LeetCode111.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode116.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o ./src/source/source/Tree/LeetCode257.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
 Finished building target: LeetCode
  
-22:42:54 **** Incremental Build of configuration Debug for project LeetCode ****
+22:16:11 **** Incremental Build of configuration Debug for project LeetCode ****
 make all 
 make: 没有什么可以做的为 `all'。
-22:45:54 **** Incremental Build of configuration Debug for project LeetCode ****
+22:16:29 **** Incremental Build of configuration Debug for project LeetCode ****
 make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
+Building file: ../src/source/source/other/LeetCode228.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode228.d" -MT"src/source/source/other/LeetCode228.d" -o "src/source/source/other/LeetCode228.o" "../src/source/source/other/LeetCode228.cpp"
+../src/source/source/other/LeetCode228.cpp: In function ‘int main()’:
+../src/source/source/other/LeetCode228.cpp:28:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i =0; i < sizeof(nums) / sizeof(int); i++){
+                                              ^
+../src/source/source/other/LeetCode228.cpp:32:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0; i < ve.size(); i++){
+                           ^
+Finished building: ../src/source/source/other/LeetCode228.cpp
  
 Building target: LeetCode
 Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
+g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode015.o ./src/source/source/other/LeetCode016.o ./src/source/source/other/LeetCode018.o ./src/source/source/other/LeetCode020.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode028.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode053.o ./src/source/source/other/LeetCode058.o ./src/source/source/other/LeetCode062.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode067.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode075.o ./src/source/source/other/LeetCode089.o ./src/source/source/other/LeetCode118.o ./src/source/source/other/LeetCode119.o ./src/source/source/other/LeetCode121.o ./src/source/source/other/LeetCode122.o ./src/source/source/other/LeetCode123.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode153.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o ./src/source/source/other/LeetCode238.o ./src/source/source/other/LeetCode258.o ./src/source/source/other/LeetCode260.o ./src/source/source/other/LeetCode263.o ./src/source/source/other/LeetCode264.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode101.o ./src/source/source/Tree/LeetCode102.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode107.o ./src/source/source/Tree/LeetCode108.o ./src/source/source/Tree/LeetCode110.o ./src/source/source/Tree/LeetCode111.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode116.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o ./src/source/source/Tree/LeetCode257.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
 Finished building target: LeetCode
  
-22:46:33 **** Incremental Build of configuration Debug for project LeetCode ****
+22:17:36 **** Incremental Build of configuration Debug for project LeetCode ****
 make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
+Building file: ../src/source/source/other/LeetCode228.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode228.d" -MT"src/source/source/other/LeetCode228.d" -o "src/source/source/other/LeetCode228.o" "../src/source/source/other/LeetCode228.cpp"
+../src/source/source/other/LeetCode228.cpp: In function ‘int main()’:
+../src/source/source/other/LeetCode228.cpp:28:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i =0; i < sizeof(nums) / sizeof(int); i++){
+                                              ^
+../src/source/source/other/LeetCode228.cpp:32:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0; i < ve.size(); i++){
+                           ^
+Finished building: ../src/source/source/other/LeetCode228.cpp
  
 Building target: LeetCode
 Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-22:47:56 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-22:49:19 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-09:56:51 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-09:57:04 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-make: 没有什么可以做的为 `all'。
-09:58:50 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-10:03:19 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-10:05:52 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-10:07:28 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
-Finished building target: LeetCode
- 
-10:07:50 **** Incremental Build of configuration Debug for project LeetCode ****
-make all 
-Building file: ../src/source/source/other/LeetCode125.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/source/source/other/LeetCode125.d" -MT"src/source/source/other/LeetCode125.d" -o "src/source/source/other/LeetCode125.o" "../src/source/source/other/LeetCode125.cpp"
-Finished building: ../src/source/source/other/LeetCode125.cpp
- 
-Building target: LeetCode
-Invoking: GCC C++ Linker
-g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
+g++  -o "LeetCode"  ./src/source/source/other/LeetCode001.o ./src/source/source/other/LeetCode003.o ./src/source/source/other/LeetCode004.o ./src/source/source/other/LeetCode005.o ./src/source/source/other/LeetCode006.o ./src/source/source/other/LeetCode007.o ./src/source/source/other/LeetCode008.o ./src/source/source/other/LeetCode009.o ./src/source/source/other/LeetCode013.o ./src/source/source/other/LeetCode014.o ./src/source/source/other/LeetCode015.o ./src/source/source/other/LeetCode016.o ./src/source/source/other/LeetCode018.o ./src/source/source/other/LeetCode020.o ./src/source/source/other/LeetCode026.o ./src/source/source/other/LeetCode027.o ./src/source/source/other/LeetCode028.o ./src/source/source/other/LeetCode036.o ./src/source/source/other/LeetCode038.o ./src/source/source/other/LeetCode053.o ./src/source/source/other/LeetCode058.o ./src/source/source/other/LeetCode062.o ./src/source/source/other/LeetCode065.o ./src/source/source/other/LeetCode066.o ./src/source/source/other/LeetCode067.o ./src/source/source/other/LeetCode070.o ./src/source/source/other/LeetCode075.o ./src/source/source/other/LeetCode089.o ./src/source/source/other/LeetCode118.o ./src/source/source/other/LeetCode119.o ./src/source/source/other/LeetCode121.o ./src/source/source/other/LeetCode122.o ./src/source/source/other/LeetCode123.o ./src/source/source/other/LeetCode125.o ./src/source/source/other/LeetCode149.o ./src/source/source/other/LeetCode153.o ./src/source/source/other/LeetCode165.o ./src/source/source/other/LeetCode168.o ./src/source/source/other/LeetCode169.o ./src/source/source/other/LeetCode171.o ./src/source/source/other/LeetCode172.o ./src/source/source/other/LeetCode189.o ./src/source/source/other/LeetCode190.o ./src/source/source/other/LeetCode191.o ./src/source/source/other/LeetCode198.o ./src/source/source/other/LeetCode202.o ./src/source/source/other/LeetCode204.o ./src/source/source/other/LeetCode205.o ./src/source/source/other/LeetCode217.o ./src/source/source/other/LeetCode219.o ./src/source/source/other/LeetCode223.o ./src/source/source/other/LeetCode228.o ./src/source/source/other/LeetCode231.o ./src/source/source/other/LeetCode238.o ./src/source/source/other/LeetCode258.o ./src/source/source/other/LeetCode260.o ./src/source/source/other/LeetCode263.o ./src/source/source/other/LeetCode264.o  ./src/source/source/Tree/LeetCode094.o ./src/source/source/Tree/LeetCode100.o ./src/source/source/Tree/LeetCode101.o ./src/source/source/Tree/LeetCode102.o ./src/source/source/Tree/LeetCode104.o ./src/source/source/Tree/LeetCode107.o ./src/source/source/Tree/LeetCode108.o ./src/source/source/Tree/LeetCode110.o ./src/source/source/Tree/LeetCode111.o ./src/source/source/Tree/LeetCode112.o ./src/source/source/Tree/LeetCode116.o ./src/source/source/Tree/LeetCode144.o ./src/source/source/Tree/LeetCode226.o ./src/source/source/Tree/LeetCode235.o ./src/source/source/Tree/LeetCode257.o  ./src/source/source/List/LeetCode002.o ./src/source/source/List/LeetCode019.o ./src/source/source/List/LeetCode021.o ./src/source/source/List/LeetCode083.o ./src/source/source/List/LeetCode136.o ./src/source/source/List/LeetCode141.o ./src/source/source/List/LeetCode142.o ./src/source/source/List/LeetCode155.o ./src/source/source/List/LeetCode160.o ./src/source/source/List/LeetCode203.o ./src/source/source/List/LeetCode206.o ./src/source/source/List/LeetCode225.o ./src/source/source/List/LeetCode232.o ./src/source/source/List/LeetCode234.o ./src/source/source/List/LeetCode237.o ./src/source/source/List/LeetCode242.o  ./src/source/source/Test.o ./src/source/source/Teststring.o   
 Finished building target: LeetCode
  

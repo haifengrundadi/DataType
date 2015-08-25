@@ -20,37 +20,24 @@ struct TreeNode {
 class Solution {
 public:
 	int total;
-	map<int,int> m;
+	int flag;
 	bool hasPathSum(TreeNode* root, int sum){
 	    if(root == NULL){
 	        	return 0;
 	     }
+	    if(flag) return flag;
 	    total += root->val;
-//	    cout<<"total="<<total<<endl;
 	    hasPathSum(root->left,sum);
 	    hasPathSum(root->right,sum);
 //	    cout<<"***"<<total;
 	    if(total == sum && root->left == NULL && root->right == NULL){
-//	    	m.insert(pair<int,int>(total, 1));
-	    	return true;
+	    	flag = true;
+	    	return flag;
 	    }
 	    total -= root->val;
-//	  	cout<< "root val = "<<root->val<< "  husu = "<<total<<endl;
-	    return total;
+//	  	cout<< "root val = "<<root->val<< "  after husu total= "<<total<<endl;
+	    return flag;
 	 }
-
-//	 bool hasPathSum(TreeNode* root, int sum) {
-//		 	 	 //深度优先算法DFS
-//		         if(root == NULL)
-//		         {
-//		         	return 0;
-//		         }
-//		         int left = maxDepth(root->left);
-//		         int right = maxDepth(root->right);
-//		         return left>right?left+1:right+1;
-//		         //若直接 return maxDepth(root->left)>maxDepth(root->right)?maxDepth(root->left)+1:maxDepth(root->right)+1;
-//		         //会通不过，因为用了两次的maxDepth()
-//	    }
 
 	TreeNode* Creat( )
 		{
@@ -85,6 +72,6 @@ public:
 //		cout<<"output the tree--1"<<endl;
 //		TreeNode* l = s->Creat();
 //		s->output(l);
-//		cout<<s->hasPathSum(l,3)<<endl;
+//		cout<<s->hasPathSum(l,4)<<endl;
 //}
 

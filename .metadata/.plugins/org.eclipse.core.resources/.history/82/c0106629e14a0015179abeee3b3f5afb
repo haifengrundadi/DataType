@@ -1,0 +1,15 @@
+#include "leetcode.h"
+
+class Solution {
+public:
+	vector<int> grayCode(int n) {
+
+	    }
+};
+
+int main() {
+	Solution * s = new Solution();
+	vector<int> nums;
+	nums = s->grayCode(2);
+	return 0;
+}
