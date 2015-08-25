@@ -20,3 +20,10 @@ fstream in;
 	for(it = v.begin(); it != v.end();it++){
 		cout<<*it<<"\t";
 	}
+	
+	string to_string(int val){
+		stringstream ss;
+		ss<<val;
+		string s=ss.str();
+		return s;
+	}

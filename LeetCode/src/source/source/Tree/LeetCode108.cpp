@@ -1,0 +1,50 @@
+#include<iostream>
+#include<vector>
+#include"leetcode.h"
+using namespace std;
+
+struct TreeNode {
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) :val(x), left(NULL), right(NULL) {}
+};
+class Solution {
+public:
+	TreeNode* sortedArrayToSubBST(vector<int>& nums,int low ,int high) {
+			if(high < low || low>= nums.size() || high < 0 ) return NULL;
+			TreeNode* root;
+			root = new TreeNode(nums[(low+high)/2]);
+			root->left = sortedArrayToSubBST(nums, low, (low+high)/2 -1);
+			root->right = sortedArrayToSubBST(nums, (low+high)/2 +1, high);
+			return root;
+	}
+
+	TreeNode* sortedArrayToBST(vector<int>& nums) {
+		int size = nums.size();
+		if(size == 0) return NULL;
+		TreeNode* root = sortedArrayToSubBST(nums, 0, size);
+		return root;
+	}
+
+	void output(TreeNode* root) {
+		if (root == NULL)
+			return;
+		cout << root->val << endl;
+		output(root->left);
+		output(root->right);
+	}
+};
+
+//int main() {
+//	Solution * s = new Solution();
+//	TreeNode* r;
+//	vector<int> nums;
+//	int arr[] = {1};
+//	for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+//		nums.push_back(arr[i]);
+//	}
+//	r = s->sortedArrayToBST(nums);
+//	s->output(r);
+//}
+

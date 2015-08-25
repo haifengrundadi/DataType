@@ -1,0 +1,186 @@
+#include<vector>
+#include<iostream>
+#include<map>
+#include<cmath>
+using namespace std;
+
+struct Point {
+	int x;
+	int y;
+	Point() :
+			x(0), y(0) {
+	}
+	Point(int a, int b) :
+			x(a), y(b) {
+	}
+};
+struct PointNum {
+	Point p;
+	int count = 0;
+	PointNum(Point a, int b) :
+			p(a), count(b) {
+	}
+};
+struct KB {
+	float k;
+	float b;
+	KB() :
+			k(0), b(0) {
+	}
+	KB(float x, float y) :
+			k(x), b(y) {
+	}
+};
+
+struct cmp_key {
+	bool operator()(const KB k1, const KB k2) const {
+		if (fabs(k1.k - k2.k) > 1.0e-5) {
+			return k1.k < k2.k;
+		}
+		if (fabs(k1.b - k2.b)> 1.0e-5) {
+			return k1.b < k2.b;
+		}
+		return false;
+	}
+};
+
+struct cmp_key_point {
+	bool operator()(const Point k1, const Point k2) const {
+		if(k1.x != k2.x){
+			return k1.x < k2.x;
+		}
+		if(k1.y != k2.y){
+			return k1.y < k2.y;
+		}
+		return false;
+	}
+};
+class Solution {
+public:
+	int maxPoints(vector<Point>& points) {
+		int max = 0;
+		int size1 = points.size();
+		if (size1 == 0)
+			return 0;
+		if (size1 == 1)
+			return 1;
+		//斜率k, 与y轴相交的b
+		float k, b;
+		//存储k，b，和斜率为无穷的map
+		map<KB, int, cmp_key> mKB;
+		map<int, int> m;
+		map<Point, int,cmp_key_point> pNum;
+		for (int i = 0; i < size1 ; i++) {
+			if(pNum.find(points[i]) == pNum.end()){
+				pNum.insert(pair<Point,int>(points[i], 1));
+			}else
+				pNum[points[i]]++;
+		}
+		int size = pNum.size();
+		map<Point, int>::iterator pNum_it, pNum_it_s;
+		int temx = 0, temy = 0,flag = 0;
+		for (pNum_it = pNum.begin(); pNum_it != pNum.end(); pNum_it++) {
+			cout<<pNum_it->first.x<<"--1-"<<pNum_it->first.y<<"     second="<<pNum_it->second<<endl;
+			if((++pNum_it) == pNum.end()) break;
+			pNum_it_s = pNum_it;
+			cout<<pNum_it_s->first.x<<"--2-"<<pNum_it_s->first.y<<"     second="<<pNum_it_s->second<<endl;
+			pNum_it--;
+			for (;pNum_it_s != pNum.end(); pNum_it_s++) {
+//				cout<<pNum_it_s->first.x<<"--3-"<<pNum_it_s->first.y<<"     second="<<pNum_it_s->second<<endl;
+				temx = pNum_it_s->first.x- pNum_it->first.x;
+				temy = pNum_it_s->first.y- pNum_it->first.y;
+				//斜率为无穷大
+				if (temx == 0 && m.find(pNum_it->first.x) == m.end()) {
+					m.insert(pair<int, int>(pNum_it->first.x, pNum_it->second+1));
+				} else if (temx == 0 && m.find(pNum_it->first.x) != m.end()) {
+					m.find(pNum_it->first.x)->second += 1;
+				} else {
+					//斜率不为无穷大
+					k = temy*1.0 / temx;
+					b = -pNum_it_s->first.y + k * pNum_it_s->first.x;
+					cout<<"b==="<<b<<endl;
+					KB kb(k, b);
+					if (mKB.find(kb) != mKB.end()) {
+						mKB.find(kb)->second += 1;
+					} else {
+						mKB.insert(pair<KB, int>(kb, pNum_it->second));
+					}
+				}
+			}
+		}
+		map<KB, int>::iterator mkb_it;
+		map<int, int>::iterator m_it;
+		//比较点的个数
+		//1:斜率为无穷大的点
+		for (m_it = m.begin(); m_it != m.end(); m_it++) {
+			cout<<"first="<<m_it->first << " count = "<< m_it->second<<endl;
+			max = max > m_it->second ? max : m_it->second;
+		}
+		cout<<"max="<<max<<endl;
+		for (mkb_it = mKB.begin(); mkb_it != mKB.end(); mkb_it++) {
+			cout<<mkb_it->first.k << "   b=" <<mkb_it->first.b<<" count = "<< mkb_it->second<<"max="<<max<<endl;
+			max = max > mkb_it->second ? max : mkb_it->second;
+		}
+		if(max <= 1) max+= pNum.begin()->second;
+		return max;
+	}
+};
+
+int main() {
+	Solution * s =  new Solution();
+	Point array0[]   = {Point(0, 0)};
+	 Point array1[] = {  Point(0,0),  Point(0,0)};
+	 Point array2[] = {  Point(84,250),  Point(0,0) ,  Point(1,0),  Point(0,-70),  Point(0,-70),  Point(1,-1),  Point(21,10),  Point(42,90), Point(-42,-230)};
+	 Point array3[] = {  Point(0,0),  Point(0,1)};
+	 Point array4[] = {  Point(0,0),  Point(1,0)};
+	 Point array5[] = {  Point(1,1),  Point(1,2),  Point(1,3)};
+	 Point array6[] = {  Point(0,0),  Point(0,1),  Point(0,0)};
+	 Point array7[] = {  Point(2,3),  Point(3,3), Point(-5,3)};
+	 Point array8[] = { Point(40,-23), Point(9,138), Point(429,115), Point(50,-17), Point(-3,80), Point(-10,33), Point(5,-21), Point(-3,80), Point(-6,-65), Point(-18,26), Point(-6,-65), Point(5,72), Point(0,77), Point(-9,86), Point(10,-2), Point(-8,85), Point(21,130), Point(18,-6), Point(-18,26), Point(-1,-15), Point(10,-2), Point(8,69), Point(-4,63), Point(0,3), Point(-4,40), Point(-7,84), Point(-8,7), Point(30,154), Point(16,-5), Point(6,90), Point(18,-6), Point(5,77), Point(-4,77), Point(7,-13), Point(-1,-45), Point(16,-5), Point(-9,86), Point(-16,11), Point(-7,84), Point(1,76), Point(3,77), Point(10,67), Point(1,-37), Point(-10,-81), Point(4,-11), Point(-20,13), Point(-10,77), Point(6,-17), Point(-27,2), Point(-10,-81), Point(10,-1), Point(-9,1), Point(-8,43), Point(2,2), Point(2,-21), Point(3,82), Point(8,-1), Point(10,-1), Point(-9,1), Point(-12,42), Point(16,-5), Point(-5,-61), Point(20,-7), Point(9,-35), Point(10,6), Point(12,106), Point(5,-21), Point(-5,82), Point(6,71), Point(-15,34), Point(-10,87), Point(-14,-12), Point(12,106), Point(-5,82), Point(-46,-45), Point(-4,63), Point(16,-5), Point(4,1), Point(-3,-53), Point(0,-17), Point(9,98), Point(-18,26), Point(-9,86), Point(2,77), Point(-2,-49), Point(1,76), Point(-3,-38), Point(-8,7), Point(-17,-37), Point(5,72), Point(10,-37), Point(-4,-57), Point(-3,-53), Point(3,74), Point(-3,-11), Point(-8,7), Point(1,88), Point(-12,42), Point(1,-37), Point(2,77), Point(-6,77), Point(5,72), Point(-4,-57), Point(-18,-33), Point(-12,42), Point(-9,86), Point(2,77), Point(-8,77), Point(-3,77), Point(9,-42), Point(16,41), Point(-29,-37), Point(0,-41), Point(-21,18), Point(-27,-34), Point(0,77), Point(3,74), Point(-7,-69), Point(-21,18), Point(27,146), Point(-20,13), Point(21,130), Point(-6,-65), Point(14,-4), Point(0,3), Point(9,-5), Point(6,-29), Point(-2,73), Point(-1,-15), Point(1,76), Point(-4,77), Point(6,-29)};
+	 //最后一个测试用例是leetCode上面最难AC的一个数据，正确答案应该是25，小伙伴们AC了吗？
+	vector<Point> arr0;
+	vector<Point> arr1;
+	vector<Point> arr2;
+	vector<Point> arr3;
+	vector<Point> arr4;
+	vector<Point> arr5;
+	vector<Point> arr6;
+	vector<Point> arr7;
+	vector<Point> arr8;
+	for (int i = 0; i < sizeof(array0) / sizeof(Point); i++) {
+		arr0.push_back(array0[i]);
+	}
+	for (int i = 0; i < sizeof(array1) / sizeof(Point); i++) {
+			arr1.push_back(array1[i]);
+		}
+	for (int i = 0; i < sizeof(array2) / sizeof(Point); i++) {
+			arr2.push_back(array2[i]);
+		}
+	for (int i = 0; i < sizeof(array3) / sizeof(Point); i++) {
+			arr3.push_back(array3[i]);
+		}
+	for (int i = 0; i < sizeof(array4) / sizeof(Point); i++) {
+			arr4.push_back(array4[i]);
+		}
+	for (int i = 0; i < sizeof(array5) / sizeof(Point); i++) {
+			arr5.push_back(array5[i]);
+		}
+	for (int i = 0; i < sizeof(array6) / sizeof(Point); i++) {
+			arr6.push_back(array6[i]);
+		}
+	for (int i = 0; i < sizeof(array7) / sizeof(Point); i++) {
+			arr7.push_back(array7[i]);
+		}
+	for (int i = 0; i < sizeof(array8) / sizeof(Point); i++) {
+				arr8.push_back(array8[i]);
+			}
+	cout <<"0"<< s->maxPoints(arr0) << endl;
+	cout <<"1"<< s->maxPoints(arr1) << endl;
+	cout<<"2" << s->maxPoints(arr2) << endl;
+	cout <<"3"<< s->maxPoints(arr3) << endl;
+	cout <<"4"<< s->maxPoints(arr4) << endl;
+	cout <<"5"<< s->maxPoints(arr5) << endl;
+	cout <<"6"<< s->maxPoints(arr6) << endl;
+	cout<<"7" << s->maxPoints(arr7) << endl;
+	cout <<"8"<< s->maxPoints(arr8) << endl;
+}

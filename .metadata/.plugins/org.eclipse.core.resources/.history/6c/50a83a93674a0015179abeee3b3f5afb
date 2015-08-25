@@ -1,0 +1,9 @@
+#include "leetcode.h"
+
+
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+
+    }
+};

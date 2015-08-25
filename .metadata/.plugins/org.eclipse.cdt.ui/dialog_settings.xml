@@ -4,6 +4,18 @@
 	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
 	<section name="completion_proposal_size">
 	</section>
+	<section name="PDOMSearchPage">
+		<item value="227191" key="searchFlags"/>
+		<item value="false" key="caseSensitive"/>
+		<list key="previousPatterns">
+			<item value="intToRoman"/>
+			<item value="productExceptSelf"/>
+			<item value="to_string"/>
+			<item value="leetcode"/>
+			<item value="Roman"/>
+			<item value="roman"/>
+		</list>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item value="506" key="size.width"/>
 		<item value="168" key="size.height"/>

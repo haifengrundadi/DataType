@@ -22,23 +22,23 @@ public:
 		vector<int>::iterator it;
 		for(it = nums.begin();it!= nums.end();it++){
 			if(*it != end && (end -begin) >= 2){
-				strArray.push_back(int2str(begin)+"->"+int2str(end-1));
+				strArray.push_back(to_string(begin)+"->"+to_string(end-1));
 				begin = end = *it;
 			}else if(*it != end ){
-				strArray.push_back(int2str(begin));
+				strArray.push_back(to_string(begin));
 				begin = end = *it;
 			}
 			end++;
 		}
 		if(nums.back() == begin){
-			strArray.push_back(int2str(begin));
+			strArray.push_back(to_string(begin));
 		}else if(nums.back() != begin){
-			strArray.push_back(int2str(begin)+"->"+int2str(end-1));
+			strArray.push_back(to_string(begin)+"->"+to_string(end-1));
 		}
 		return strArray;
 	}
 
-	string int2str(int i) {
+	string to_string(int i) {
 	  string s;
 	  stringstream ss(s);
 	  ss << i;
@@ -55,9 +55,9 @@ public:
 
 //int main(){
 //	Solution * s= new Solution();
-//	cout<<s->int2str(1)<<endl;
+//	cout<<s->to_string(1)<<endl;
 //	int num[] = {0,1,2,4,5,7,9,10,11,13,15};
-//	vector<int> nums = s->create(num, 11);
+//	vector<int> nums = s->create(num, sizeof(num)/sizeof(int));
 //	cout<<s->summaryRanges(nums).size()<<endl;
 //	return 0;
 //}

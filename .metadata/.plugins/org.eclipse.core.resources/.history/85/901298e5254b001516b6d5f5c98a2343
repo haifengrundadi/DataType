@@ -1,0 +1,109 @@
+/*
+ * LeetCode235.cpp
+ *
+ *  Created on: 2015年8月3日
+ *      Author: juanecho
+ */
+
+#include "leetcode.h"
+#include <sstream>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ };
+
+class Solution {
+public:
+	string to_string(int val){
+		stringstream ss;
+		ss<<val;
+		string s=ss.str();
+		return s;
+	}
+
+	vector<string> binaryTreePaths(TreeNode* root) {
+		//DFS
+		vector<string> v;
+		string str="";
+		vector<TreeNode*> cur;
+		TreeNode * t=root;
+		if(root == NULL) return v;
+		while(!cur.empty()||t != NULL){
+			while(t!= NULL){
+				cur.push_back(t);
+				str.append(to_string(t->val)).append("->");
+//				cout<<"----"<<str<<endl;
+				t = t->left;
+			}
+			t = cur.back();
+			cur.pop_back();
+			str =  str.substr(0,str.find(to_string(t->val)));
+
+			if(t->right == NULL){
+				str.append(to_string(t->val));
+				v.push_back(str);
+			}
+//			cout<<"str="<<str<<endl;
+			if(cur.empty()) return v;//只有一个结点的时候
+			while(t->right == NULL &&  !cur.empty()){
+				t = cur.back();
+				cur.pop_back();
+//				cout<<"****"<<str<<"----"<<str.find(to_string(t->val))<<endl;
+				str =  str.substr(0,str.find(to_string(t->val)));
+			}
+			if(cur.empty()) return v;//只有一个结点的时候
+			str.append(to_string(t->val)).append("->");
+//			cout<<"t="<<to_string(t->val)<<endl;
+			t = t->right;
+//			cout<<"t="<<to_string(t->val)<<endl;
+//			cout<<"**str="<<str<<endl;
+		}
+		return v;
+	}
+
+
+	TreeNode* Creat( )
+	{
+		TreeNode* root;
+		int ch;
+		cout<<"请输入创建一棵二叉树的结点数据"<<endl;
+	 	 cin>>ch;
+	    if (ch==-1)
+	    	root = NULL;
+	    else
+	    {
+	    	 root = new TreeNode(ch);       //生成一个结点
+	         root->left   =  Creat( );    //递归建立左子树
+	         root->right = Creat( );    //递归建立右子树
+	    }
+	    return root;
+	}
+
+	void  output(TreeNode* root )
+	{
+	  if(root == NULL)
+		  return;
+	  cout<<root->val<<endl;
+	  output(root->left);
+	  output(root->right);
+	}
+};
+
+int main()
+{
+	Solution * s = new Solution();
+	vector<string> vstr;
+	cout<<"output the tree--1"<<endl;
+	TreeNode* root = s->Creat();
+	vstr=s->binaryTreePaths(root);
+	vector<string>::iterator it;
+	cout<<"************"<<endl;
+		for(it = vstr.begin(); it != vstr.end();it++){
+			cout<<*it<<"\t";
+		}
+}
+
